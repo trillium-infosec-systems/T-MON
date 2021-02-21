@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="attackApp" class="ng-scope">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <!--<base href="/">-->
+        <base href=".">
+        <link rel="shortcut icon" href="https://infosecurity.com.pk/templates/jux_one/favicon.ico" type="image/x-icon">
+        <title>TISS Offerings</title>
+        
+        <link href="./res/app.css" rel="stylesheet">
+        <script type="text/javascript" async="" src="./res/qfryyyst"></script><script type="text/javascript" async="" src="./res/analytics.js"></script><script async="" src="./res/hotjar-1759429.js"></script><script async="" src="./res/modules.aba0ecfabdef708986ad.js" charset="utf-8"></script>
+         <style type="text/css">.backpack.dropzone {
+            font-family: 'SF UI Display', 'Segoe UI';
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 150px;
+            font-weight: lighter;
+            color: white;
+            will-change: right;
+            z-index: 2147483647;
+            bottom: 20%;
+            background: #333;
+            position: fixed;
+            user-select: none;
+            transition: left .5s, right .5s;
+            right: 0px; }
+            .backpack.dropzone .animation {
+            height: 80px;
+            width: 250px;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            .backpack.dropzone .title::before {
+            content: 'Save to'; }
+            .backpack.dropzone.closed {
+            right: -250px; }
+            .backpack.dropzone.hover .animation {
+            animation: sxt-play-anim-hover 0.91s steps(21);
+            animation-fill-mode: forwards;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            @keyframes sxt-play-anim-hover {
+            from {
+            background-position: 0px; }
+            to {
+            background-position: -5250px; } }
+            .backpack.dropzone.saving .title::before {
+            content: 'Saving to'; }
+            .backpack.dropzone.saving .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+            animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+            @keyframes sxt-play-anim-saving {
+            100% {
+            background-position: -14750px; } }
+            .backpack.dropzone.saved .title::before {
+            content: 'Saved to'; }
+            .backpack.dropzone.saved .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+            animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+            @keyframes sxt-play-anim-saved {
+            100% {
+            background-position: -5000px; } }
+        </style>
+        
+    </head>
+    <body data-gr-c-s-loaded="true">
+        <!-- ngView: -->
+        <ng-view class="ng-scope">
+            <div class="wrapper ng-scope">
+                <div sp-header="" class="ng-isolate-scope">
+                    <div class="header-box">
+                        <header id="header" class="header-box__header header" ng-class="{&#39;is-open&#39;:isOpen, &#39;is-fixed&#39;:isFixed, &#39;is-show&#39;:isShow}">
+                            <div class="header__inner inner">
+                                <div class="header__row">
+                                    <div class="header__logo">
+                                        <img src="https://infosecurity.com.pk/images/other/TISS_website_logo_v3.png" width="30%"/>
+                                            
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <section class="mitre-page ng-scope" ng-controller="IndexController">
+                    <div class="mitre-page__inner inner">
+                        <div class="mitre-page__wrap">
+                            <div class="mitre-page__row">
+                                <div class="mitre-page__col mitre-page__col--left">
+                                    <ul class="fast-search-nav">
+                                        <li class="fast-search-nav__item">
+                                            <a class="fast-search-nav__link fast-search-nav__link--first is-active" ng-class="{&#39;is-active&#39;: fastSearch.selected == &#39;All&#39;}" ng-click="fastSearch.selected = &#39;All&#39;; refreshSearch();">All</a>
+                                        </li>
+                                        <!-- ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                        <li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                            <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Phishing TTP</a>
+                                        </li>
+                                        <!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                        <li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                            <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Zoom</a>
+                                        </li>
+                                        <!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                        <li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                            <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Work From Home</a>
+                                        </li>
+                                        <!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                        <li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                            <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Panda APT</a>
+                                        </li>
+                                        <!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                        <li class="fast-search-nav__item ng-scope" ng-repeat="(oneFilterName, oneFilter) in fastSearch.list">
+                                            <a class="fast-search-nav__link ng-binding" ng-class="{&#39;is-active&#39;: fastSearch.selected == oneFilterName}" ng-click="fastSearch.selected = oneFilterName; refreshSearch();">Bear APT</a>
+                                        </li>
+                                        <!-- end ngRepeat: (oneFilterName, oneFilter) in fastSearch.list -->
+                                    </ul>
+                                </div>
+                                <div class="mitre-page__col mitre-page__col--right">
+                                    <div class="search-box__row">
+                                        <div class="search-box__control">
+                                            <input autocomplete="off" class="search-box__input ng-pristine ng-untouched ng-valid ng-empty" name="search" ng-model="searchString" placeholder="e.g. APT28, PowerShell" type="text">
+                                            <div class="search-box__btn">
+                                                <button class="search-box__submit button" name="submit" type="submit">
+                                                <img alt="Search" src="./res/search.svg">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mitre-box">
+                                <div class="mitre-box__row">
+                                    <div class="mitre-box__col mitre-box__col--tactics">
+                                        <div class="tactics-box">
+                                            <h4 class="tactics-box__title mitre-title ng-binding">
+                                                Tactics (12)
+                                            </h4>
+                                            <div class="tactics-list-wrap">
+                                                <div class="tactics-list-wrap__item">
+                                                    <a class="tactics-list-wrap__link ng-binding" ng-click="oneTacticIsOpen = true">
+                                                    Initial Access
+                                                    <span class="tactics-list-wrap__count ng-binding">
+                                                    9 tecnhigues
+                                                    </span>
+                                                    </a>
+                                                    <div class="tactics-list-wrap__arrow" style="background-image: url(./assets/images/arrow-down-select.svg)"></div>
+                                                </div>
+                                                <div class="tactics-list-wrap__modal" ng-class="{&#39;is-open&#39;:oneTacticIsOpen}">
+                                                    <div class="tactics-list-wrap__modal-header">
+                                                        <h4 class="tactics-list-wrap__modal-title">
+                                                            CHOOSE TACTICS
+                                                        </h4>
+                                                        <button class="tactics-list-wrap__modal-close" ng-click="setOneTacticIsOpen(false);">
+                                                            <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                                                <path clip-rule="evenodd" d="M2.56066 0.439339C1.97487 -0.146446 1.02513 -0.146446 0.439339 0.439339C-0.146446 1.02513 -0.146446 1.97487 0.439339 2.56066L6.87868 9L0.439358 15.4393C-0.146428 16.0251 -0.146428 16.9749 0.439358 17.5606C1.02514 18.1464 1.97489 18.1464 2.56068 17.5606L9 11.1213L15.4393 17.5606C16.0251 18.1464 16.9749 18.1464 17.5606 17.5606C18.1464 16.9749 18.1464 16.0251 17.5606 15.4393L11.1213 9L17.5607 2.56066C18.1464 1.97487 18.1464 1.02513 17.5607 0.439339C16.9749 -0.146446 16.0251 -0.146446 15.4393 0.439339L9 6.87868L2.56066 0.439339Z" fill="white" fill-rule="evenodd"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="tactics-list">
+                                                        <!-- ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding is-active" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Initial Access
+                                                            <span class="tactics-list__count ng-binding">9 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Execution
+                                                            <span class="tactics-list__count ng-binding">10 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Persistence
+                                                            <span class="tactics-list__count ng-binding">18 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Privilege Escalation
+                                                            <span class="tactics-list__count ng-binding">12 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Defense Evasion
+                                                            <span class="tactics-list__count ng-binding">34 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Credential Access
+                                                            <span class="tactics-list__count ng-binding">14 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Discovery
+                                                            <span class="tactics-list__count ng-binding">23 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Lateral Movement
+                                                            <span class="tactics-list__count ng-binding">9 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Collection
+                                                            <span class="tactics-list__count ng-binding">16 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Command and Control
+                                                            <span class="tactics-list__count ng-binding">16 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Exfiltration
+                                                            <span class="tactics-list__count ng-binding">9 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                        <div class="tactics-list__item ng-scope" ng-repeat="(oneTacticId, oneTactic) in tacticsTechniquesMenu">
+                                                            <a class="tactics-list__link ng-binding" ng-class="{&#39;is-active&#39;: oneTacticId == selectedTactic}" ng-click="switchCurrentTactic(oneTacticId); setOneTacticIsOpen(false);">
+                                                            Impact
+                                                            <span class="tactics-list__count ng-binding">13 techniques</span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- end ngRepeat: (oneTacticId, oneTactic) in tacticsTechniquesMenu -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mitre-box__col mitre-box__col--technique">
+                                        <div class="technique-box">
+                                            <h4 class="technique-box__title mitre-title ng-binding">
+                                                Techniques (9)
+                                            </h4>
+                                            <div class="technique-list">
+                                                <!-- ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link is-active" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Drive-by Compromise</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">16</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Exploit Public-Facing Application</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">7</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">5</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">External Remote Services</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">11</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Hardware Additions</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Phishing</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">3</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Replication Through Removable Media</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">12</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Supply Chain Compromise</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">1</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">3</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Trusted Relationship</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">2</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">0</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                                <div class="technique-list__item ng-scope" ng-repeat="(oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children">
+                                                    <a class="technique-list__link" ng-class="{&#39;is-active&#39;: oneTechniqueId == selectedTechnique}" ng-click="oneTechniqueIsOpen = true; switchCurrentTechnique(oneTechniqueId); setOneTechniqueIsOpen(true);">
+                                                        <h4 class="technique-list__title ng-binding">Valid Accounts</h4>
+                                                        <div class="list-count">
+                                                            <div class="list-count__row">
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Rules</div>
+                                                                    <div class="list-count__number ng-binding">8</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Examples</div>
+                                                                    <div class="list-count__number ng-binding">24</div>
+                                                                </div>
+                                                                <div class="list-count__col">
+                                                                    <div class="list-count__text">Subtechniques</div>
+                                                                    <div class="list-count__number ng-binding">4</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end ngRepeat: (oneTechniqueId, oneTechnique) in tacticsTechniquesMenu[selectedTactic].children -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mitre-box__col mitre-box__col--content" ng-class="{&#39;is-open&#39;:oneTechniqueIsOpen}">
+                                        <div class="content-box">
+                                            <div class="back-btn">
+                                                <button class="back-btn__btn" ng-click="oneTechniqueIsOpen = false">
+                                                    <span class="back-btn__icon">
+                                                        <svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                                            <path clip-rule="evenodd" d="M6.20711 0.770084C5.81658 0.364521 5.18342 0.364521 4.79289 0.770084L0.292893 5.44338C-0.0976315 5.84894 -0.0976315 6.50649 0.292893 6.91205L4.79289 11.5853C5.18342 11.9909 5.81658 11.9909 6.20711 11.5853C6.59763 11.1798 6.59763 10.5222 6.20711 10.1167L3.41421 7.21623H11C11.5523 7.21623 12 6.75127 12 6.17772C12 5.60416 11.5523 5.13921 11 5.13921H3.41421L6.20711 2.23876C6.59763 1.8332 6.59763 1.17565 6.20711 0.770084Z" fill="#EE3523" fill-rule="evenodd"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="back-btn__text">BACK</span>
+                                                </button>
+                                            </div>
+                                            <div curr-url="currUrl" sp-content-one-technique="" sub-technique-id="selectedSubTechnique" technique="tacticsTechniquesMenu[selectedTactic].children[selectedTechnique]" class="ng-isolate-scope">
+                                                <div class="content-box__wrap">
+                                                    <div class="content-box__scroll">
+                                                        <h2 class="content-box__title ng-binding">Drive-by Compromise</h2>
+                                                        <div class="content-box__select ng-hide" ng-show="showTechniqueSelector(currentTechnique.children)">
+                                                            <div class="select">
+                                                                <label class="select__label">
+                                                                Choose subtechnique
+                                                                </label>
+                                                                <div allow-clear="false" dropdown-css-class="custom-select-dropdown" hide-search="true" items="currentTechnique.children" placeholder="Choose Sub Technique" select-id="choose-sub-technique" select-name="choose-sub-technique" selected="currentSubTechnique.id" sp-select2="" tags="true" class="ng-isolate-scope">
+                                                                    <div id="choose-sub-technique-wrap">
+                                                                        <select class="select__init ng-pristine ng-untouched ng-valid ng-not-empty select2-hidden-accessible" name="choose-sub-technique" ng-model="selected" id="choose-sub-technique" data-select2-id="choose-sub-technique" tabindex="-1" aria-hidden="true">
+                                                                            <option value=""></option>
+                                                                            <!-- ngRepeat: (value, name) in items -->
+                                                                            <option ng-repeat="(value, name) in items" value="T1189" class="ng-binding ng-scope" selected="selected" data-select2-id="2">Core technique</option>
+                                                                            <!-- end ngRepeat: (value, name) in items -->
+                                                                        </select>
+                                                                        <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-choose-sub-technique-container"><span class="select2-selection__rendered" id="select2-choose-sub-technique-container" role="textbox" aria-readonly="true" title="Core technique">Core technique</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- ngIf: !currentSubTechnique.errorDataLoad -->
+                                                        <div class="content-box__tabs ng-scope" ng-if="!currentSubTechnique.errorDataLoad">
+                                                            <div class="tabs-bar">
+                                                                <ul class="tabs-bar__list">
+                                                                    <li class="tabs-bar__item">
+                                                                        <a class="tabs-bar__link is-active" ng-class="{&#39;is-active&#39;: selected.tab == &#39;info&#39;}" ng-click="selected.tab = &#39;info&#39;">Info</a>
+                                                                    </li>
+                                                                    <li class="tabs-bar__item">
+                                                                        <a class="tabs-bar__link" ng-class="{&#39;is-active&#39;: selected.tab == &#39;examples&#39;}" ng-click="selected.tab = &#39;examples&#39;" ng-show="checkArrayLength(currentSubTechnique.examples_table)">Examples</a>
+                                                                        <a class="tabs-bar__link disabled ng-hide" ng-show="!checkArrayLength(currentSubTechnique.examples_table)">Examples</a>
+                                                                    </li>
+                                                                    <li class="tabs-bar__item">
+                                                                        <a class="tabs-bar__link ng-hide" ng-class="{&#39;is-active&#39;: selected.tab == &#39;sigma&#39;}" ng-click="selected.tab = &#39;sigma&#39;" ng-show="checkArrayLength(currentSubTechnique.rules)">Sigma</a>
+                                                                        <a class="tabs-bar__link disabled" ng-show="!checkArrayLength(currentSubTechnique.rules)">Sigma</a>
+                                                                    </li>
+                                                                    <li class="tabs-bar__item">
+                                                                        <a class="tabs-bar__link ng-hide" ng-class="{&#39;is-active&#39;: selected.tab == &#39;yara&#39;}" ng-click="selected.tab = &#39;yara&#39;" ng-show="checkArrayLength(currentSubTechnique.yara)">Yara</a>
+                                                                        <a class="tabs-bar__link disabled" ng-show="!checkArrayLength(currentSubTechnique.yara)">Yara</a>
+                                                                    </li>
+                                                                    <li class="tabs-bar__item">
+                                                                        <a class="tabs-bar__link ng-hide" ng-class="{&#39;is-active&#39;: selected.tab == &#39;red_test&#39;}" ng-click="selected.tab = &#39;red_test&#39;" ng-show="checkArrayLength(currentSubTechnique.red_test)">RED Tests</a>
+                                                                        <a class="tabs-bar__link disabled" ng-show="!checkArrayLength(currentSubTechnique.red_test)">RED Tests</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="tabs-bar__container no-subtechnique" ng-class="{&#39;no-subtechnique&#39;:!showTechniqueSelector(currentTechnique.children)}">
+                                                                    <div class="tabs-bar__content show is-active" ng-class="{&#39;show is-active&#39;: selected.tab == &#39;info&#39;}">
+                                                                        <div class="list-count">
+                                                                            <div class="list-count__row">
+                                                                                <div class="list-count__col">
+                                                                                    <div class="list-count__text">ID:</div>
+                                                                                    <div class="list-count__number ng-binding">T1189</div>
+                                                                                </div>
+                                                                                <div class="list-count__col">
+                                                                                    <div class="list-count__text">Version:</div>
+                                                                                    <div class="list-count__number ng-binding">1.2</div>
+                                                                                </div>
+                                                                                <div class="list-count__col">
+                                                                                    <div class="list-count__text">Created:</div>
+                                                                                    <div class="list-count__number ng-binding">18 April 2018</div>
+                                                                                </div>
+                                                                                <div class="list-count__col">
+                                                                                    <div class="list-count__text">CAPEC ID:</div>
+                                                                                    <div class="list-count__number">
+                                                                                        <a class="list-count__link ng-binding" target="_blank">
+                                                                                        -
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="list-count__col">
+                                                                                    <div class="list-count__text">Contributor</div>
+                                                                                    <div class="list-count__number ng-binding">Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services); Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-block">
+                                                                            <h3 class="text-block__title">DESCRIPTION</h3>
+                                                                            <div class="text-block__description ng-binding" ng-bind-html="trustAsHtml(currentSubTechnique.descr)">
+                                                                                <p>Adversaries may gain access to a system through a user visiting a website over the normal course of browsing. With this technique, the user's web browser is typically targeted for exploitation, but adversaries may also use compromised websites for non-exploitation behavior such as acquiring <a data-href="/techniques/T1550/001">Application Access Token</a>.</p>
+                                                                                <p>Multiple ways of delivering exploit code to a browser exist, including:</p>
+                                                                                <ul>
+                                                                                    <li>A legitimate website is compromised where adversaries have injected some form of malicious code such as JavaScript, iFrames, and cross-site scripting.</li>
+                                                                                    <li>Malicious ads are paid for and served through legitimate ad providers.</li>
+                                                                                    <li>Built-in web application interfaces are leveraged for the insertion of any other kind of object that can be used to display web content or contain a script that executes on the visiting client (e.g. forum posts, comments, and other user controllable web content).</li>
+                                                                                </ul>
+                                                                                <p>Often the website used by an adversary is one visited by a specific community, such as government, a particular industry, or region, where the goal is to compromise a specific user or set of users based on a shared interest. This kind of targeted attack is referred to a strategic web compromise or watering hole attack. There are several known examples of this occurring.<span onclick="scrollToRef(&#39;scite-1&#39;)" id="scite-ref-1-a" class="scite-citeref-number" data-reference="Shadowserver Strategic Web Compromise"><sup><a href="http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/" target="_blank" data-hasqtip="0" aria-describedby="qtip-0">[1]</a></sup></span></p>
+                                                                                <p>Typical drive-by compromise process:</p>
+                                                                                <ol>
+                                                                                    <li>A user visits a website that is used to host the adversary controlled content.</li>
+                                                                                    <li>
+                                                                                        Scripts automatically execute, typically searching versions of the browser and plugins for a potentially vulnerable version. 
+                                                                                        <ul>
+                                                                                            <li>The user may be required to assist in this process by enabling scripting or active website components and ignoring warning dialog boxes.</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>Upon finding a vulnerable version, exploit code is delivered to the browser.</li>
+                                                                                    <li>
+                                                                                        If exploitation is successful, then it will give the adversary code execution on the user's system unless other protections are in place.
+                                                                                        <ul>
+                                                                                            <li>In some cases a second visit to the website after the initial scan is required before exploit code is delivered.</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ol>
+                                                                                <p>Unlike <a data-href="/techniques/T1190">Exploit Public-Facing Application</a>, the focus of this technique is to exploit software on a client endpoint upon visiting a website. This will commonly give an adversary access to systems on the internal network instead of external systems that may be in a DMZ.</p>
+                                                                                <p>Adversaries may also use compromised websites to deliver a user to a malicious application designed to <a data-href="/techniques/T1528">Steal Application Access Token</a>s, like OAuth tokens, to gain access to protected applications and information. These malicious applications have been delivered through popups on legitimate websites.<span onclick="scrollToRef(&#39;scite-2&#39;)" id="scite-ref-2-a" class="scite-citeref-number" data-reference="Volexity OceanLotus Nov 2017"><sup><a href="https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/" target="_blank" data-hasqtip="1" aria-describedby="qtip-1">[2]</a></sup></span></p>
+                                                                            </div>
+                                                                            <div class="text-block__row text-block__row--margin-top">
+                                                                                <div class="text-block__col">
+                                                                                    <h5 class="text-block__sub-title">Tactics:</h5>
+                                                                                    <div class="text-block__content ng-binding">Initial Access</div>
+                                                                                </div>
+                                                                                <div class="text-block__col">
+                                                                                    <h5 class="text-block__sub-title">Permission Required:</h5>
+                                                                                    <div class="text-block__content ng-binding">User</div>
+                                                                                </div>
+                                                                                <div class="text-block__col">
+                                                                                    <h5 class="text-block__sub-title">Platforms:</h5>
+                                                                                    <div class="text-block__content ng-binding">Linux, SaaS, Windows, macOS</div>
+                                                                                </div>
+                                                                                <div class="text-block__col">
+                                                                                    <h5 class="text-block__sub-title">Data Sources</h5>
+                                                                                    <div class="text-block__content ng-binding">Network device logs, Network intrusion detection system, Packet capture, Process use of network, SSL/TLS inspection, Web proxy</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-block" ng-show="currentSubTechnique.detection.length &gt; 0">
+                                                                            <h3 class="text-block__title">DETECTION</h3>
+                                                                            <div class="text-block__description ng-binding" ng-bind-html="trustAsHtml(currentSubTechnique.detection)">
+                                                                                <p>Firewalls and proxies can inspect URLs for potentially known-bad domains or parameters. They can also do reputation-based analytics on websites and their requested resources such as how old a domain is, who it's registered to, if it's on a known bad list, or how many other users have connected to it before.</p>
+                                                                                <p>Network intrusion detection systems, sometimes with SSL/TLS MITM inspection, can be used to look for known malicious scripts (recon, heap spray, and browser identification scripts have been frequently reused), common script obfuscation, and exploit code.</p>
+                                                                                <p>Detecting compromise based on the drive-by exploit from a legitimate website may be difficult. Also look for behavior on the endpoint system that might indicate successful compromise, such as abnormal behavior of browser processes. This could include suspicious files written to disk, evidence of <a data-href="/techniques/T1055">Process Injection</a> for attempts to hide execution, evidence of Discovery, or other unusual network traffic that may indicate additional tools transferred to the system.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-block text-block--top-margin" ng-show="checkArrayLength(currentSubTechnique.mitigation_table)">
+                                                                            <h3 class="text-block__title">Mitigation</h3>
+                                                                            <!-- ngRepeat: oneMitigation in currentSubTechnique.mitigation_table -->
+                                                                            <div class="text-block__row text-block__row--divider ng-scope" ng-repeat="oneMitigation in currentSubTechnique.mitigation_table">
+                                                                                <div class="text-block__content text-block__content--margin">
+                                                                                    <div class="name-badge ng-binding">Application Isolation and Sandboxing</div>
+                                                                                </div>
+                                                                                <div class="text-block__content ng-binding" ng-bind-html="trustAsHtml(oneMitigation.descr)">
+                                                                                    <p>Browser sandboxes can be used to mitigate some of the impact of exploitation, but sandbox escapes may still exist.<span onclick="scrollToRef(&#39;scite-3&#39;)" id="scite-ref-3-a" class="scite-citeref-number" data-reference="Windows Blogs Microsoft Edge Sandbox"><sup><a href="https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/" target="_blank" data-hasqtip="2" aria-describedby="qtip-2">[3]</a></sup></span><span onclick="scrollToRef(&#39;scite-4&#39;)" id="scite-ref-4-a" class="scite-citeref-number" data-reference="Ars Technica Pwn2Own 2017 VM Escape"><sup><a href="https://arstechnica.com/information-technology/2017/03/hack-that-escapes-vm-by-exploiting-edge-browser-fetches-105000-at-pwn2own/" target="_blank" data-hasqtip="3" aria-describedby="qtip-3">[4]</a></sup></span></p>
+                                                                                    <p>Other types of virtualization and application microsegmentation may also mitigate the impact of client-side exploitation. The risks of additional exploits and weaknesses in implementation may still exist for these types of systems.<span onclick="scrollToRef(&#39;scite-4&#39;)" id="scite-ref-4-a" class="scite-citeref-number" data-reference="Ars Technica Pwn2Own 2017 VM Escape"><sup><a href="https://arstechnica.com/information-technology/2017/03/hack-that-escapes-vm-by-exploiting-edge-browser-fetches-105000-at-pwn2own/" target="_blank" data-hasqtip="3" aria-describedby="qtip-3">[4]</a></sup></span></p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- end ngRepeat: oneMitigation in currentSubTechnique.mitigation_table -->
+                                                                            <div class="text-block__row text-block__row--divider ng-scope" ng-repeat="oneMitigation in currentSubTechnique.mitigation_table">
+                                                                                <div class="text-block__content text-block__content--margin">
+                                                                                    <div class="name-badge ng-binding">Exploit Protection</div>
+                                                                                </div>
+                                                                                <div class="text-block__content ng-binding" ng-bind-html="trustAsHtml(oneMitigation.descr)">
+                                                                                    <p>Security applications that look for behavior used during exploitation such as Windows Defender Exploit Guard (WDEG) and the Enhanced Mitigation Experience Toolkit (EMET) can be used to mitigate some exploitation behavior. <span onclick="scrollToRef(&#39;scite-5&#39;)" id="scite-ref-5-a" class="scite-citeref-number" data-reference="TechNet Moving Beyond EMET"><sup><a href="https://blogs.technet.microsoft.com/srd/2017/08/09/moving-beyond-emet-ii-windows-defender-exploit-guard/" target="_blank" data-hasqtip="4" aria-describedby="qtip-4">[5]</a></sup></span> Control flow integrity checking is another way to potentially identify and stop a software exploit from occurring. <span onclick="scrollToRef(&#39;scite-6&#39;)" id="scite-ref-6-a" class="scite-citeref-number" data-reference="Wikipedia Control Flow Integrity"><sup><a href="https://en.wikipedia.org/wiki/Control-flow_integrity" target="_blank" data-hasqtip="5" aria-describedby="qtip-5">[6]</a></sup></span> Many of these protections depend on the architecture and target application binary for compatibility.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- end ngRepeat: oneMitigation in currentSubTechnique.mitigation_table -->
+                                                                            <div class="text-block__row text-block__row--divider ng-scope" ng-repeat="oneMitigation in currentSubTechnique.mitigation_table">
+                                                                                <div class="text-block__content text-block__content--margin">
+                                                                                    <div class="name-badge ng-binding">Restrict Web-Based Content</div>
+                                                                                </div>
+                                                                                <div class="text-block__content ng-binding" ng-bind-html="trustAsHtml(oneMitigation.descr)">
+                                                                                    <p>For malicious code served up through ads, adblockers can help prevent that code from executing in the first place.</p>
+                                                                                    <p>Script blocking extensions can help prevent the execution of JavaScript that may commonly be used during the exploitation process.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- end ngRepeat: oneMitigation in currentSubTechnique.mitigation_table -->
+                                                                            <div class="text-block__row text-block__row--divider ng-scope" ng-repeat="oneMitigation in currentSubTechnique.mitigation_table">
+                                                                                <div class="text-block__content text-block__content--margin">
+                                                                                    <div class="name-badge ng-binding">Update Software</div>
+                                                                                </div>
+                                                                                <div class="text-block__content ng-binding" ng-bind-html="trustAsHtml(oneMitigation.descr)">
+                                                                                    <p>Ensure all browsers and plugins kept updated can help prevent the exploit phase of this technique. Use modern browsers with security features turned on.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- end ngRepeat: oneMitigation in currentSubTechnique.mitigation_table -->
+                                                                        </div>
+                                                                        <div class="text-block text-block--top-margin" ng-show="checkArrayLength(currentSubTechnique.bottom_ref)">
+                                                                            <h3 class="text-block__title">REFERENCES</h3>
+                                                                            <ul class="list-link">
+                                                                                <!-- ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/" target="_blank" href="http://blog.shadowserver.org/2012/05/15/cyber-espionage-strategic-web-compromises-trusted-websites-serving-dangerous-results/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Adair, S., Moran, N. (2012, May 15). Cyber Espionage &amp; Strategic Web Compromises – Trusted Websites Serving Dangerous Results. Retrieved March 13, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/" target="_blank" href="https://www.volexity.com/blog/2017/11/06/oceanlotus-blossoms-mass-digital-surveillance-and-exploitation-of-asean-nations-the-media-human-rights-and-civil-society/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Lassalle, D., et al. (2017, November 6). OceanLotus Blossoms: Mass Digital Surveillance and Attacks Targeting ASEAN, Asian Nations, the Media, Human Rights Groups, and Civil Society. Retrieved November 6, 2017.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/" target="_blank" href="https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Cowan, C. (2017, March 23). Strengthening the Microsoft Edge Sandbox. Retrieved March 12, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://arstechnica.com/information-technology/2017/03/hack-that-escapes-vm-by-exploiting-edge-browser-fetches-105000-at-pwn2own/" target="_blank" href="https://arstechnica.com/information-technology/2017/03/hack-that-escapes-vm-by-exploiting-edge-browser-fetches-105000-at-pwn2own/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Goodin, D. (2017, March 17). Virtual machine escape fetches $105,000 at Pwn2Own hacking contest - updated. Retrieved March 12, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://blogs.technet.microsoft.com/srd/2017/08/09/moving-beyond-emet-ii-windows-defender-exploit-guard/" target="_blank" href="https://blogs.technet.microsoft.com/srd/2017/08/09/moving-beyond-emet-ii-windows-defender-exploit-guard/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Nunez, N. (2017, August 9). Moving Beyond EMET II – Windows Defender Exploit Guard. Retrieved March 12, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://en.wikipedia.org/wiki/Control-flow_integrity" target="_blank" href="https://en.wikipedia.org/wiki/Control-flow_integrity">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Wikipedia. (2018, January 11). Control-flow integrity. Retrieved March 12, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf" target="_blank" href="https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">FireEye. (2018, February 20). APT37 (Reaper): The Overlooked North Korean Actor. Retrieved March 1, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" target="_blank">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Trend Micro. (2017, February 27). RATANKBA: Delving into Large-scale Watering Holes against Enterprises. Retrieved May 22, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.us-cert.gov/ncas/alerts/TA18-074A" target="_blank" href="https://www.us-cert.gov/ncas/alerts/TA18-074A">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">US-CERT. (2018, March 16). Alert (TA18-074A): Russian Government Cyber Activity Targeting Energy and Other Critical Infrastructure Sectors. Retrieved June 6, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.symantec.com/connect/blogs/tick-cyberespionage-group-zeros-japan" target="_blank" href="https://www.symantec.com/connect/blogs/tick-cyberespionage-group-zeros-japan">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">DiMaggio, J. (2016, April 28). Tick cyberespionage group zeros in on Japan. Retrieved July 16, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf" target="_blank" href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">O'Gorman, G., and McDonald, G.. (2012, September 6). The Elderwood Project. Retrieved February 15, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.csmonitor.com/USA/2012/0914/Stealing-US-business-secrets-Experts-ID-two-huge-cyber-gangs-in-China" target="_blank" href="https://www.csmonitor.com/USA/2012/0914/Stealing-US-business-secrets-Experts-ID-two-huge-cyber-gangs-in-China">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Clayton, M.. (2012, September 14). Stealing US business secrets: Experts ID two huge cyber 'gangs' in China. Retrieved February 15, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="http://securityaffairs.co/wordpress/8528/hacking/elderwood-project-who-is-behind-op-aurora-and-ongoing-attacks.html" target="_blank" href="http://securityaffairs.co/wordpress/8528/hacking/elderwood-project-who-is-behind-op-aurora-and-ongoing-attacks.html">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Paganini, P. (2012, September 9). Elderwood project, who is behind Op. Aurora and ongoing attacks?. Retrieved February 13, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east" target="_blank" href="https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Symantec Security Response. (2018, July 25). Leafminer: New Espionage Campaigns Targeting Middle Eastern Regions. Retrieved August 28, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="http://www.symantec.com/connect/blogs/patchwork-cyberespionage-group-expands-targets-governments-wide-range-industries" target="_blank" href="http://www.symantec.com/connect/blogs/patchwork-cyberespionage-group-expands-targets-governments-wide-range-industries">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Hamada, J.. (2016, July 25). Patchwork cyberespionage group expands targets from governments to wide range of industries. Retrieved August 17, 2016.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.volexity.com/blog/2018/06/07/patchwork-apt-group-targets-us-think-tanks/" target="_blank" href="https://www.volexity.com/blog/2018/06/07/patchwork-apt-group-targets-us-think-tanks/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Meltzer, M, et al. (2018, June 07). Patchwork APT Group Targets US Think Tanks. Retrieved July 16, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://securelist.com/operation-daybreak/75100/" target="_blank" href="https://securelist.com/operation-daybreak/75100/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Raiu, C., and Ivanov, A. (2016, June 17). Operation Daybreak. Retrieved February 15, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf" target="_blank" href="https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Blaich, A., et al. (2018, January 18). Dark Caracal: Cyber-espionage at a Global Scale. Retrieved April 11, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://researchcenter.paloaltonetworks.com/2016/01/new-attacks-linked-to-c0d0s0-group/" target="_blank" href="https://researchcenter.paloaltonetworks.com/2016/01/new-attacks-linked-to-c0d0s0-group/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Grunzweig, J., Lee, B. (2016, January 22). New Attacks Linked to C0d0so0 Group. Retrieved August 2, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://download.microsoft.com/download/2/2/5/225BFE3E-E1DE-4F5B-A77B-71200928D209/Platinum%20feature%20article%20-%20Targeted%20attacks%20in%20South%20and%20Southeast%20Asia%20April%202016.pdf" target="_blank" href="https://download.microsoft.com/download/2/2/5/225BFE3E-E1DE-4F5B-A77B-71200928D209/Platinum%20feature%20article%20-%20Targeted%20attacks%20in%20South%20and%20Southeast%20Asia%20April%202016.pdf">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Windows Defender Advanced Threat Hunting Team. (2016, April 29). PLATINUM: Targeted attacks in South and Southeast Asia. Retrieved February 15, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage" target="_blank" href="https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Dell SecureWorks Counter Threat Unit Threat Intelligence. (2015, August 5). Threat Group-3390 Targets Organizations for Cyberespionage. Retrieved August 18, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://securelist.com/luckymouse-hits-national-data-center/86083/" target="_blank" href="https://securelist.com/luckymouse-hits-national-data-center/86083/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Legezo, D. (2018, June 13). LuckyMouse hits national data center to organize country-level waterholing campaign. Retrieved August 18, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://www.welivesecurity.com/2018/03/13/oceanlotus-ships-new-backdoor/" target="_blank" href="https://www.welivesecurity.com/2018/03/13/oceanlotus-ships-new-backdoor/">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Foltýn, T. (2018, March 13). OceanLotus ships new backdoor using old tricks. Retrieved May 22, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://content.fireeye.com/apt/rpt-apt38" target="_blank" href="https://content.fireeye.com/apt/rpt-apt38">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">FireEye. (2018, October 03). APT38: Un-usual Suspects. Retrieved November 6, 2018.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                                <li class="list-link__item ng-scope" ng-repeat="oneRef in currentSubTechnique.bottom_ref">
+                                                                                    <a class="list-link__link" ng-href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08070903/darkhotel_kl_07.11.pdf" target="_blank" href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08070903/darkhotel_kl_07.11.pdf">
+                                                                                        <div class="list-link__icon">
+                                                                                            <img alt="foreign" src="./res/foreign.svg">
+                                                                                        </div>
+                                                                                        <span class="list-link__text ng-binding">Kaspersky Lab's Global Research and Analysis Team. (2014, November). The Darkhotel APT A Story of Unusual Hospitality. Retrieved November 12, 2014.</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <!-- end ngRepeat: oneRef in currentSubTechnique.bottom_ref -->
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tabs-bar__content" ng-class="{&#39;show is-active&#39;: selected.tab == &#39;examples&#39;}">
+                                                                        <div class="table-box">
+                                                                            <div class="table-box__head">
+                                                                                <div class="table-box__row">
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Name</h6>
+                                                                                    </div>
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Description</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="table-box__body">
+                                                                                <!-- ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0073">APT19</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0073">APT19</a> performed a watering hole attack on forbes.com in 2014 to compromise targets.<span onclick="scrollToRef(&#39;scite-19&#39;)" id="scite-ref-19-a" class="scite-citeref-number" data-reference="Unit 42 C0d0so0 Jan 2016"><sup><a href="https://researchcenter.paloaltonetworks.com/2016/01/new-attacks-linked-to-c0d0s0-group/" target="_blank" data-hasqtip="18" aria-describedby="qtip-18">[19]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0050">APT32</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0050">APT32</a> has infected victims by tricking them into visiting compromised watering hole websites.<span onclick="scrollToRef(&#39;scite-23&#39;)" id="scite-ref-23-a" class="scite-citeref-number" data-reference="ESET OceanLotus"><sup><a href="https://www.welivesecurity.com/2018/03/13/oceanlotus-ships-new-backdoor/" target="_blank" data-hasqtip="22" aria-describedby="qtip-22">[23]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0067">APT37</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0067">APT37</a> has used strategic web compromises, particularly of South Korean websites, to distribute malware. The group has also used torrent file-sharing sites to more indiscriminately disseminate malware to victims. As part of their compromises, the group has used a Javascript based profiler called RICECURRY to profile a victim's web browser and deliver malicious code accordingly.<span onclick="scrollToRef(&#39;scite-17&#39;)" id="scite-ref-17-a" class="scite-citeref-number" data-reference="Securelist ScarCruft Jun 2016"><sup><a href="https://securelist.com/operation-daybreak/75100/" target="_blank" data-hasqtip="16" aria-describedby="qtip-16">[17]</a></sup></span><span onclick="scrollToRef(&#39;scite-7&#39;)" id="scite-ref-7-a" class="scite-citeref-number" data-reference="FireEye APT37 Feb 2018"><sup><a href="https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf" target="_blank" data-hasqtip="6" aria-describedby="qtip-6">[7]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0082">APT38</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0082">APT38</a> has conducted watering holes schemes to gain initial access to victims.<span onclick="scrollToRef(&#39;scite-24&#39;)" id="scite-ref-24-a" class="scite-citeref-number" data-reference="FireEye APT38 Oct 2018"><sup><a href="https://content.fireeye.com/apt/rpt-apt38" target="_blank" data-hasqtip="23" aria-describedby="qtip-23">[24]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0060">BRONZE BUTLER</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0060">BRONZE BUTLER</a> compromised three Japanese websites using a Flash exploit to perform watering hole attacks.<span onclick="scrollToRef(&#39;scite-10&#39;)" id="scite-ref-10-a" class="scite-citeref-number" data-reference="Symantec Tick Apr 2016"><sup><a href="https://www.symantec.com/connect/blogs/tick-cyberespionage-group-zeros-japan" target="_blank" data-hasqtip="9" aria-describedby="qtip-9">[10]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0070">Dark Caracal</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0070">Dark Caracal</a> leveraged a watering hole to serve up malicious code.<span onclick="scrollToRef(&#39;scite-18&#39;)" id="scite-ref-18-a" class="scite-citeref-number" data-reference="Lookout Dark Caracal Jan 2018"><sup><a href="https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf" target="_blank" data-hasqtip="17" aria-describedby="qtip-17">[18]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0012">Darkhotel</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0012">Darkhotel</a> used embedded iframes on hotel login portals to redirect selected victims to download malware.<span onclick="scrollToRef(&#39;scite-25&#39;)" id="scite-ref-25-a" class="scite-citeref-number" data-reference="Kaspersky Darkhotel"><sup><a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08070903/darkhotel_kl_07.11.pdf" target="_blank" data-hasqtip="24" aria-describedby="qtip-24">[25]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0074">Dragonfly 2.0</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0074">Dragonfly 2.0</a> compromised legitimate organizations' websites to create watering holes to compromise victims.<span onclick="scrollToRef(&#39;scite-9&#39;)" id="scite-ref-9-a" class="scite-citeref-number" data-reference="US-CERT TA18-074A"><sup><a href="https://www.us-cert.gov/ncas/alerts/TA18-074A" target="_blank" data-hasqtip="8" aria-describedby="qtip-8">[9]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0066">Elderwood</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0066">Elderwood</a> has delivered zero-day exploits and malware to victims by injecting malicious code into specific public Web pages visited by targets within a particular sector.<span onclick="scrollToRef(&#39;scite-11&#39;)" id="scite-ref-11-a" class="scite-citeref-number" data-reference="Symantec Elderwood Sept 2012"><sup><a href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf" target="_blank" data-hasqtip="10" aria-describedby="qtip-10">[11]</a></sup></span><span onclick="scrollToRef(&#39;scite-12&#39;)" id="scite-ref-12-a" class="scite-citeref-number" data-reference="CSM Elderwood Sept 2012"><sup><a href="https://www.csmonitor.com/USA/2012/0914/Stealing-US-business-secrets-Experts-ID-two-huge-cyber-gangs-in-China" target="_blank" data-hasqtip="11" aria-describedby="qtip-11">[12]</a></sup></span><span onclick="scrollToRef(&#39;scite-13&#39;)" id="scite-ref-13-a" class="scite-citeref-number" data-reference="Security Affairs Elderwood Sept 2012"><sup><a href="http://securityaffairs.co/wordpress/8528/hacking/elderwood-project-who-is-behind-op-aurora-and-ongoing-attacks.html" target="_blank" data-hasqtip="12" aria-describedby="qtip-12">[13]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="software/S0215">KARAE</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/software/S0215">KARAE</a> was distributed through torrent file-sharing websites to South Korean victims, using a YouTube video downloader application as a lure.<span onclick="scrollToRef(&#39;scite-7&#39;)" id="scite-ref-7-a" class="scite-citeref-number" data-reference="FireEye APT37 Feb 2018"><sup><a href="https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf" target="_blank" data-hasqtip="6" aria-describedby="qtip-6">[7]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0032">Lazarus Group</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0032">Lazarus Group</a> delivered <a data-href="/software/S0241">RATANKBA</a> to victims via a compromised legitimate website.<span onclick="scrollToRef(&#39;scite-8&#39;)" id="scite-ref-8-a" class="scite-citeref-number" data-reference="RATANKBA"><sup>[8]</sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0077">Leafminer</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0077">Leafminer</a> has infected victims using watering holes.<span onclick="scrollToRef(&#39;scite-14&#39;)" id="scite-ref-14-a" class="scite-citeref-number" data-reference="Symantec Leafminer July 2018"><sup><a href="https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east" target="_blank" data-hasqtip="13" aria-describedby="qtip-13">[14]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0040">Patchwork</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0040">Patchwork</a> has used watering holes to deliver files with exploits to initial victims.<span onclick="scrollToRef(&#39;scite-15&#39;)" id="scite-ref-15-a" class="scite-citeref-number" data-reference="Symantec Patchwork"><sup><a href="http://www.symantec.com/connect/blogs/patchwork-cyberespionage-group-expands-targets-governments-wide-range-industries" target="_blank" data-hasqtip="14" aria-describedby="qtip-14">[15]</a></sup></span><span onclick="scrollToRef(&#39;scite-16&#39;)" id="scite-ref-16-a" class="scite-citeref-number" data-reference="Volexity Patchwork June 2018"><sup><a href="https://www.volexity.com/blog/2018/06/07/patchwork-apt-group-targets-us-think-tanks/" target="_blank" data-hasqtip="15" aria-describedby="qtip-15">[16]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0068">PLATINUM</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0068">PLATINUM</a> has sometimes used drive-by attacks against vulnerable browser plugins.<span onclick="scrollToRef(&#39;scite-20&#39;)" id="scite-ref-20-a" class="scite-citeref-number" data-reference="Microsoft PLATINUM April 2016"><sup><a href="https://download.microsoft.com/download/2/2/5/225BFE3E-E1DE-4F5B-A77B-71200928D209/Platinum%20feature%20article%20-%20Targeted%20attacks%20in%20South%20and%20Southeast%20Asia%20April%202016.pdf" target="_blank" data-hasqtip="19" aria-describedby="qtip-19">[20]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="software/S0216">POORAIM</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/software/S0216">POORAIM</a> has been delivered through compromised sites acting as watering holes.<span onclick="scrollToRef(&#39;scite-7&#39;)" id="scite-ref-7-a" class="scite-citeref-number" data-reference="FireEye APT37 Feb 2018"><sup><a href="https://www2.fireeye.com/rs/848-DID-242/images/rpt_APT37.pdf" target="_blank" data-hasqtip="6" aria-describedby="qtip-6">[7]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                                <div class="table-box__row ng-scope" ng-repeat="oneExample in currentSubTechnique.examples_table">
+                                                                                    <div class="table-box__col">
+                                                                                        <a class="name-badge ng-binding" data-href="groups/G0027">Threat Group-3390</a>
+                                                                                    </div>
+                                                                                    <div class="table-box__col ng-binding" ng-bind-html="trustAsHtml(oneExample.descr)">
+                                                                                        <p><a data-href="/groups/G0027">Threat Group-3390</a> has extensively used strategic web compromises to target victims.<span onclick="scrollToRef(&#39;scite-21&#39;)" id="scite-ref-21-a" class="scite-citeref-number" data-reference="Dell TG-3390"><sup><a href="https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage" target="_blank" data-hasqtip="20" aria-describedby="qtip-20">[21]</a></sup></span><span onclick="scrollToRef(&#39;scite-22&#39;)" id="scite-ref-22-a" class="scite-citeref-number" data-reference="Securelist LuckyMouse June 2018"><sup><a href="https://securelist.com/luckymouse-hits-national-data-center/86083/" target="_blank" data-hasqtip="21" aria-describedby="qtip-21">[22]</a></sup></span></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngRepeat: oneExample in currentSubTechnique.examples_table -->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tabs-bar__content" ng-class="{&#39;show is-active&#39;: selected.tab == &#39;sigma&#39;}">
+                                                                        <div class="table-box table-box--rules">
+                                                                            <div class="table-box__head">
+                                                                                <div class="table-box__row">
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Sigma Name</h6>
+                                                                                    </div>
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Links</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="table-box__body">
+                                                                                <!-- ngRepeat: oneRule in currentSubTechnique.rules -->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tabs-bar__content" ng-class="{&#39;show is-active&#39;: selected.tab == &#39;yara&#39;}">
+                                                                        <div class="table-box table-box--rules">
+                                                                            <div class="table-box__head">
+                                                                                <div class="table-box__row">
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Yara Name</h6>
+                                                                                    </div>
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Links</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="table-box__body">
+                                                                                <!-- ngRepeat: oneRule in currentSubTechnique.yara -->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tabs-bar__content" ng-class="{&#39;show is-active&#39;: selected.tab == &#39;red_test&#39;}">
+                                                                        <div class="table-box table-box--rules">
+                                                                            <div class="table-box__head">
+                                                                                <div class="table-box__row">
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">RED Test Name</h6>
+                                                                                    </div>
+                                                                                    <div class="table-box__col">
+                                                                                        <h6 class="table-box__title">Links</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="table-box__body">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </ng-view>
+        <!-- GA -->
+        <script async="" src="./res/js"></script>
+        
+        <script type="text/javascript" src="./res/app.da4249b5215613698906.js"></script>
+        
+        
+    </body>
+</html>

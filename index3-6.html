@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="attackApp" class="ng-scope">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <!--<base href="/">-->
+        <base href=".">
+        <link rel="shortcut icon" href="https://infosecurity.com.pk/templates/jux_one/favicon.ico" type="image/x-icon">
+        <title>TISS Offerings</title>
+        
+        <link href="./res/app.css" rel="stylesheet">
+        <script type="text/javascript" async="" src="./res/qfryyyst"></script><script type="text/javascript" async="" src="./res/analytics.js"></script><script async="" src="./res/hotjar-1759429.js"></script><script async="" src="./res/modules.aba0ecfabdef708986ad.js" charset="utf-8"></script>
+         <style type="text/css">.backpack.dropzone {
+            font-family: 'SF UI Display', 'Segoe UI';
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 150px;
+            font-weight: lighter;
+            color: white;
+            will-change: right;
+            z-index: 2147483647;
+            bottom: 20%;
+            background: #333;
+            position: fixed;
+            user-select: none;
+            transition: left .5s, right .5s;
+            right: 0px; }
+            .backpack.dropzone .animation {
+            height: 80px;
+            width: 250px;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            .backpack.dropzone .title::before {
+            content: 'Save to'; }
+            .backpack.dropzone.closed {
+            right: -250px; }
+            .backpack.dropzone.hover .animation {
+            animation: sxt-play-anim-hover 0.91s steps(21);
+            animation-fill-mode: forwards;
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+            @keyframes sxt-play-anim-hover {
+            from {
+            background-position: 0px; }
+            to {
+            background-position: -5250px; } }
+            .backpack.dropzone.saving .title::before {
+            content: 'Saving to'; }
+            .backpack.dropzone.saving .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+            animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+            @keyframes sxt-play-anim-saving {
+            100% {
+            background-position: -14750px; } }
+            .backpack.dropzone.saved .title::before {
+            content: 'Saved to'; }
+            .backpack.dropzone.saved .animation {
+            background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+            animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+            @keyframes sxt-play-anim-saved {
+            100% {
+            background-position: -5000px; } }
+			body{background-color:black}
+			<!-- /*td{border-right:4px solid #8c8e97;} */-->
+ table{border-spacing: 15px !important;}
+ td{background-color:#3b3d4f;color:White; border-radius:5px;height:65px;font-size:16px; 	}
+ tr:first-child td {
+    border-right:2px solid red
+}
+.ui.selection.dropdown .menu {
+    max-height: 16.02857143rem;
+    BACKGROUND: #575a73 !important;
+    color: white;
+    COLOR: white;
+}
+.ui.selection.dropdown .menu>.item {
+
+    color: white;
+    border: 1px solid black;
+}
+div.dataTables_wrapper div.dataTables_length .ui.selection.dropdown {
+    min-width: 0;
+    background-color: #3b3d4f;
+}
+.ui.form input[type=search] {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    tap-highlight-color: rgba(255,255,255,0);
+    line-height: 1.21428571em;
+    padding: .67857143em 1em;
+    font-size: 1em;
+    background: #3b3d4f !important;
+    border: 1px solid rgba(34,36,38,.15);
+    color: white !important;
+    border-radius: .28571429rem;
+    -webkit-box-shadow: 0 0 0 0 transparent inset;
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+}
+.ui.dropdown>.text {
+    color:white;
+}
+label{color:white}
+.ui.grid>.row {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%!important;
+    
+    padding-top: 2rem !important;
+    padding-bottom: 1rem;
+}
+.ui.pagination.menu .item {
+    min-width: 3em;
+    text-align: center;
+    background: grey !important ;
+}
+.ui.menu .item.disabled, .ui.menu .item.disabled:hover {
+    cursor: default!important;
+    background-color: grey!important;
+    color: rgba(40,40,40,.3)!important;
+}
+        </style>
+		
+		
+		<style>
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+overflow: hidden;
+    border-bottom: 11px solid #1a1e2f;
+    background-color: #3b3d4f;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #3b3d4f;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color:white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+color:red;
+border-bottom:2px solid red;	
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #3b3d4f;
+  color:white; 
+  border-bottom:2px solid red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #3b3d4f;
+  border-top: none;
+  height:520px;
+  color:white;
+  background-color:#3b3d4f;
+  border-radius:5px;
+}
+.leftdiv{
+float:left;
+width:60%;
+}
+.rightdiv{
+    float: left;
+    width: 39%;
+    padding-right: 1%;
+    margin-right: 1%;
+    background-color: #3b3d4f;
+    margin-top: 8%;
+}
+</style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.semanticui.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.js									"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js             "></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.semanticui.min.js         "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js   "></script>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+
+    </head>
+    <body data-gr-c-s-loaded="true" style="width:100%;background-color:#1a1e2f;color:grey">
+        <!-- ngView: -->
+        <ng-view class="ng-scope">
+            <div class="wrapper ng-scope">
+                <div sp-header="" class="ng-isolate-scope">
+                    <div class="header-box">
+                        <header id="header" class="header-box__header header" ng-class="{&#39;is-open&#39;:isOpen, &#39;is-fixed&#39;:isFixed, &#39;is-show&#39;:isShow}" style="background-color:black">
+                            <div class="header__inner inner">
+                                <div class="header__row">
+                                    <div class="header__logo">
+                                        <img src="https://infosecurity.com.pk/images/inner-page-header-logo.png" />
+                                            
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                
+            </div>
+			
+<center><div class="leftdiv"><table id="example" class="ui celled table" style="width:99%;background-color:#1a1e2f;color:White;border-spacing: 20px;">
+        <thead style="background-color:#3b3d4f;color:White">
+            <tr style="background-color:#3b3d4f;color:White">
+                <th style="background-color:#3b3d4f;color:White">DOMAIN </th>
+                <th style="background-color:#3b3d4f;color:White">SKILLS </th>
+                <th style="background-color:#3b3d4f;color:White">TACTICS</th>
+                <th style="background-color:#3b3d4f;color:White">TECHNIQUES</th>
+
+            </tr>
+        </thead>
+        <tbody>
+<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
+<tr><td>	Detection & Response	</td><td>	Flow Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
+<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
+<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Exploit Public-Facing Application	</td></tr>
+<tr><td>	Detection & Response	</td><td>	Flow Analysis	</td><td>	Initial Access	</td><td>	Exploit Public-Facing Application	</td></tr>
+
+
+        </tbody>
+
+    </table></div>
+	<div  class="rightdiv">
+	<h2 style="color:white; align:left; padding-top:1%" >Drive-by Compromise</h2>
+	<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Beginner')" id="defaultOpen">Beginner</button>
+  <button class="tablinks" onclick="openCity(event, 'Intermediate')">Intermediate</button>
+  <button class="tablinks" onclick="openCity(event, 'Expert')">Expert</button>
+  <button class="tablinks" onclick="openCity(event, 'Info')">Info</button>
+</div>
+
+<div id="Beginner" class="tabcontent">
+  <h3>Beginner</h3>
+  <p>Beginner Details</p>
+</div>
+
+<div id="Intermediate" class="tabcontent">
+  <h3>Intermediate</h3>
+  <p>Intermediate Details</p> 
+</div>
+
+<div id="Expert" class="tabcontent">
+  <h3>Expert</h3>
+  <p>Expert Details</p>
+</div>
+<div id="Expert" class="tabcontent">
+  <h3>Expert</h3>
+  <p>Expert Details</p>
+</div>
+<div id="Info" class="tabcontent">
+  <h3>Info</h3>
+  <p>Info Details</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<script>
+// Get the element with id="defaultOpen" and click on it
+
+document.getElementById("defaultOpen").click();
+</script>   
+	</div>
+</center>
+        </ng-view>
+        <!-- GA -->
+        <script async="" src="./res/js"></script>
+        
+        
+        
+    </body>
+</html>
