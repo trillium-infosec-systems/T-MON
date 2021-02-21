@@ -1,0 +1,103 @@
+a {
+  color: #3598dc;
+}
+a:hover {
+  color: #217ebd;
+}
+.sp-megamenu-parent >li.active>a,
+.sp-megamenu-parent >li:hover>a {
+  color: #3598dc;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
+  background: transparent;
+}
+#offcanvas-toggler >i {
+  color: #666666;
+}
+#offcanvas-toggler >i:hover {
+  color: #3598dc;
+}
+.btn-primary,
+.sppb-btn-primary {
+  border-color: #3598dc;
+  background-color: #3598dc;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #1d6fa7;
+  background-color: #217ebd !important;
+}
+ul.social-icons >li a:hover {
+  color: #3598dc;
+}
+.layout-boxed .body-innerwrapper {
+  background: #ffffff;
+}
+.sp-module ul >li >a {
+  color: #666666;
+}
+.sp-module ul >li >a:hover {
+  color: #3598dc;
+}
+.sp-module .latestnews >div >a {
+  color: #666666;
+}
+.sp-module .latestnews >div >a:hover {
+  color: #3598dc;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #3598dc;
+}
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+  background: #3598dc;
+}
+.search .btn-toolbar button {
+  background: #3598dc;
+}
+.post-format {
+  background: #3598dc;
+}
+.voting-symbol span.star.active:before {
+  color: #3598dc;
+}
+.sp-rating span.star:hover:before,
+.sp-rating span.star:hover ~ span.star:before {
+  color: #217ebd;
+}
+.entry-link,
+.entry-quote {
+  background: #3598dc;
+}
+blockquote {
+  border-color: #3598dc;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #3598dc;
+}
+.sp-comingsoon body {
+  background-color: #3598dc;
+}
+.pagination>li>a,
+.pagination>li>span {
+  color: #666666;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>li>span:hover,
+.pagination>li>span:focus {
+  color: #666666;
+}
+.pagination>.active>a,
+.pagination>.active>span {
+  border-color: #3598dc;
+  background-color: #3598dc;
+}
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+  border-color: #3598dc;
+  background-color: #3598dc;
+}
