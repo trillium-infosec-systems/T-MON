@@ -364,7 +364,7 @@ a:hover, a:focus, a:active {
             background-position: -5000px; } }
 			body{background-color:black}
 			<!-- /*td{border-right:4px solid #8c8e97;} */-->
- table{border-spacing: 15px !important;}
+ table{border-spacing: 10px !important;}
  td{background-color:#3b3d4f;color:White; border-radius:5px;height:65px;font-size:16px; 	}
  tr:first-child td {
     border-right:2px solid red
@@ -491,16 +491,9 @@ border-bottom:2px solid red;
 }
 .leftdiv{
 float:left;
-width:60%;
+width:100%;
 }
-.rightdiv{
-    float: left;
-    width: 39%;
-    padding-right: 1%;
-    margin-right: 1%;
-    background-color: #3b3d4f;
-    margin-top: 8%;
-}
+
 </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.semanticui.min.css">
@@ -822,28 +815,571 @@ $(document).ready(function() {
                 
             </div>
 			
-<center><div class="leftdiv"><table id="example" class="ui celled table" style="width:99%;background-color:#1a1e2f;color:White;border-spacing: 20px;">
+<center><div class="leftdiv"><table id="example" class="ui celled table" style="width:100%;background-color:#1a1e2f;color:White;border-spacing: 5px;">
         <thead style="background-color:#3b3d4f;color:White">
             <tr style="background-color:#3b3d4f;color:White">
                 <th style="background-color:#3b3d4f;color:White">DOMAIN </th>
                 <th style="background-color:#3b3d4f;color:White">SKILLS </th>
                 <th style="background-color:#3b3d4f;color:White">TACTICS</th>
                 <th style="background-color:#3b3d4f;color:White">TECHNIQUES</th>
-
+				<th style="background-color:#3b3d4f;color:White">Win</th>
+				<th style="background-color:#3b3d4f;color:White">Linux</th>
+				<th style="background-color:#3b3d4f;color:White">MAC</th>
+				<th style="background-color:#3b3d4f;color:White">Beginner</th>
+				<th style="background-color:#3b3d4f;color:White">Intermediate</th>
+				<th style="background-color:#3b3d4f;color:White">Expert</th>
+				<th style="background-color:#3b3d4f;color:White">Info</th>				
             </tr>
         </thead>
         <tbody>
-<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
-<tr><td>	Detection & Response	</td><td>	Flow Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
-<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td></tr>
-<tr><td>	Detection & Response	</td><td>	Log Analysis	</td><td>	Initial Access	</td><td>	Exploit Public-Facing Application	</td></tr>
-<tr><td>	Detection & Response	</td><td>	Flow Analysis	</td><td>	Initial Access	</td><td>	Exploit Public-Facing Application	</td></tr>
-
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Drive-by Compromise	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	via Cross Site Scripting	</td><td>	Browser Exploit	</td><td>	Flash Exploit	</td><td>	<a href="	https://attack.mitre.org/techniques/T1189/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Exploit Public-Facing Application	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	via SQL Injection, OS Command Injection etc	</td><td>	via Public Exploit - 1	</td><td>	via Public Exploit - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1190/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	External Remote Services	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Gain Access via SSH	</td><td>	Gain and Maintain Access via VPN	</td><td>	Gain and Maintain Access via OWA	</td><td>	<a href="	https://attack.mitre.org/techniques/T1133/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Hardware Additions	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Gain Access via USB, Keystroke Injection	</td><td>	Rouge AP point, Passive Network Tapping	</td><td>	Adding new wireless access to an existing network, man-in-the middle encryption breaking, kernel memory reading via DMA	</td><td>	<a href="	https://attack.mitre.org/techniques/T1200/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Replication Through Removable Media	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Gain Access via USB (Autorun Malware Execution)	</td><td>	Gain Access via USB (njRAT)	</td><td>	Gain Access via USB Spreading 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1091/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Spearphishing Attachment	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Gain Access via Word,PDF and Excel docs (1)	</td><td>	Gain Access via Word,PDF and Excel docs (Bypassing Gmail)	</td><td>	Gain Access via Word,PDF and Excel docs (Bypassing Antiviruses Solutions)	</td><td>	<a href="	https://attack.mitre.org/techniques/T1193/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Spearphishing Link	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Spearphishing link to Malicious Zip,Docx,Pdf,Excel etc files	</td><td>	Spearphishing link with URL Shortener .hta files	</td><td>	Spearphishing link with URL Shortener to redirect targets to credential harvesting sites	</td><td>	<a href="	https://attack.mitre.org/techniques/T1192/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Spearphishing via Service	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Spearphishing link to Malicious Zip,Docx,Pdf,Excel etc files	</td><td>	Spearphishing link with URL Shortener .hta files	</td><td>	Spearphishing link with URL Shortener to redirect targets to credential harvesting sites	</td><td>	<a href="	https://attack.mitre.org/techniques/T1194/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Supply Chain Compromise	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Manipulation of development tools, development  environment and Replacement of legitimate software	</td><td>	Manipulation of source code repositorie and source code in open-source dependencies	</td><td>	Manipulation of software update mechanisms	</td><td>	<a href="	https://attack.mitre.org/techniques/T1194/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Trusted Relationship	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Fake Email or social media account	</td><td>	Phishing Attack	</td><td>	Third Party relationship	</td><td>	<a href="	https://attack.mitre.org/techniques/T1199/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Initial Access	</td><td>	Valid Accounts	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Client System Accounts	</td><td>	Network Devices e.g routers or firewall	</td><td>	Internal Applications such as shared directories, active directories or mail servers	</td><td>	<a href="	https://attack.mitre.org/techniques/T1078/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	AppleScript	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>	Execution via AppleScript - 1	</td><td>	Execution via AppleScript - 2	</td><td>	Execution via AppleScript - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1155/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	CMSTP	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Abuse CMSTP.exe to load and execute DLLs and/or COM scriptlets (SCT)	</td><td>	Use cmstp.exe to bypass AppLocker and launch a malicious script	</td><td>	Abuse CMSTP.exe to load and execute DLLs and/or COM scriptlets (SCT) from remote server, Abuse CMSTP.exe to Bypass User Account Control and execute arbitrary commands from a malicious INF through an auto-elevated COM interface	</td><td>	<a href="	https://attack.mitre.org/techniques/T1191/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Command-Line Interface	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Use Windows command shell to get reverse shell or execute commands	</td><td>	Gain a Reverse shell - 1	</td><td>	Gain a reverse shell - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1059/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Compiled HTML File	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Leverage a compiled HTML file that contained a command to download and run an executable (Backdoor)	</td><td>	Leverage a compiled HTML file that contained a command to download and run an executable (Backdoor) - 2	</td><td>	Leverage a compiled HTML file that contained a command to download and run an executable (Backdoor) - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1223/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Control Panel Items	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Drop and executes a malicious CPL file as payload to gain Execution - 1	</td><td>	Drop and executes a malicious CPL file as payload to gain Execution - 2	</td><td>	Use Control Panel items as execution payloads to execute arbitrary commands	</td><td>	<a href="	https://attack.mitre.org/techniques/T1196/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Dynamic Data Exchange	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Malicious Word OLE compound documents, Malicious VBS	</td><td>	Executing PowerShell commands through DDE in Word document	</td><td>	Use the Dynamic Data Exchange (DDE) protocol to download and execute remote payloads	</td><td>	<a href="	https://attack.mitre.org/techniques/T1173/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Execution through API	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Start a process using CreateProcess	</td><td>	Download a malicious .exe and execute it via CreateProcess API	</td><td>	Leverage the Windows API calls: VirtualAlloc(), WriteProcessMemory(), and CreateRemoteThread() for process injection, via Empire Modules	</td><td>	<a href="	https://attack.mitre.org/techniques/T1106/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Execution through Module Load	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Load a DLL using the LoadLibrary API	</td><td>	Create a backdoor through which attacker should load and call DLL functions	</td><td>	NTFS junction or symlink	</td><td>	<a href="	https://attack.mitre.org/techniques/T1129/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Exploitation for Client Execution	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Browser based Exploitation, Office Applications Exploitation, Common Third Party Applications Exploitation (1)	</td><td>	Browser based Exploitation, Office Applications Exploitation, Common Third Party Applications Exploitation (2)	</td><td>	Browser based Exploitation, Office Applications Exploitation, Common Third Party Applications Exploitation (3)	</td><td>	<a href="	https://attack.mitre.org/techniques/T1203/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Graphical User Interface	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltartion via RDP	</td><td>	Reverse Shell via RDP	</td><td>	RDP Tunneling	</td><td>	<a href="	https://attack.mitre.org/techniques/T1061/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	InstallUtil	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Use InstallUtil to proxy execution of code through a trusted Windows utility	</td><td>	Reverse Shell via InstallUtil	</td><td>	Use InstallUtil to bypass process whitelisting and get code execution	</td><td>	<a href="	https://attack.mitre.org/techniques/T1118/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Launchctl	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>	Reverse shell via Launchctl	</td><td>	Backdoor execution from plist file via Launchctl	</td><td>	Achieve Persistency via Launchctl	</td><td>	<a href="	https://attack.mitre.org/techniques/T1152/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Local Job Scheduling	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Use crontab,cronjob and cron tasks to ensure persistence	</td><td>	<a href="	https://attack.mitre.org/techniques/T1168/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	LSASS Driver	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Abuse lsass.exe drivers to obtain execution	</td><td>	Abuse lsass.exe drivers to obtain execution - 2	</td><td>	Abuse lsass.exe drivers to obtain persistency	</td><td>	<a href="	https://attack.mitre.org/techniques/T1177/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Mshta	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Get Execution via mshta.exe directly from URLs	</td><td>	Get Execution via mshta.exe through an inline script	</td><td>	Abuse Mshta.exe to bypass application whitelisting solutions	</td><td>	<a href="	https://attack.mitre.org/techniques/T1170/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	PowerShell	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Gain Code Execution via Powershell	</td><td>	Empire, Powersploit	</td><td>	Execute powershell scripts without invoking the powershell.exe binary	</td><td>	<a href="	https://attack.mitre.org/techniques/T1086/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Regsvcs/Regasm	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Use Regsvcs and Regasm to proxy execution of code through a trusted Windows utility	</td><td>	Use Regsvcs and Regasm to bypass process whitelisting	</td><td>	<a href="	https://attack.mitre.org/techniques/T1121/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Regsvr32	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Abuse Regsvr32.exe to execute malicious script to gain command execution	</td><td>	Use Regsvr32.exe to register a COM Object to establish Persistence via Component Object Model Hijacking.	</td><td>	Use Regsvr32.exe to bypass process whitelisting using functionality to load COM scriptlets to execute DLLs under user permissions, Use Regsvr32 to bypass application whitelisting	</td><td>	<a href="	https://attack.mitre.org/techniques/T1117/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Rundll32	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Run DLL Main Function	</td><td>	"Execute Control Panel
+ Item files"	</td><td>	"execute scripts such as
+ JavaScript"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1085/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Scripting	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Scripting to automate execution of commands	</td><td>	Downloaded and launched code within a SCT file	</td><td>	Scripts to perform internal reconnaissance	</td><td>	<a href="	https://attack.mitre.org/techniques/T1064/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Service Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Execution Pyaload via Service	</td><td>	Persistence with Existing service	</td><td>	System privileges	</td><td>	<a href="	https://attack.mitre.org/techniques/T1035/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Signed Binary Proxy Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Execute MSI installer - 1	</td><td>	Execute MSI installer - 2	</td><td>	Execute DLL 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1218/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Signed Script Proxy Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Execute Script on Target System using 
+signed script"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1216/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Source	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Execute a programs.	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1153/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Space after Filename	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Space after a false .jpg extension	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1151/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Third-party Software	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	False DPKG packages	</td><td>	"Remote code execution on
+ all systems that are 
+connected to a Deplyment System"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1072/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Trap	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	"Commands will be 
+executed upon receiving 
+interrupt signals"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1154/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Trusted Developer Utilities	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	DLL Hijacking with trusted binary	</td><td>	"Execution of malicious 
+code with trusted process"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1127/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	User Execution	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Malicious executable with icon and
+ apparent extension"	</td><td>		</td><td>	"Spearphishing link for 
+exploitation of a browser 
+or application"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1204/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	"Windows Management 
+Instrumentation"	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	System enumuration	</td><td>	File Execution	</td><td>	Code execution via WMI	</td><td>	<a href="	https://attack.mitre.org/techniques/T1047/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	Windows Remote Management	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Interact With Remote System	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1028/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Execution	</td><td>	XSL Script Processing	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Executes embedded 
+JScript or VBScript in an XSL stylesheet"	</td><td>	"Msxsl.exe to bypass 
+AppLocker"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1220/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Scheduled Task	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Run Payload at startup	</td><td>	Lateral Movement	</td><td>	System privileges	</td><td>	<a href="	https://attack.mitre.org/techniques/T1053/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	.bash_profile and .bashrc	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Run Payload at restart	</td><td>		</td><td>	Run Payload at restart	</td><td>	<a href="	https://attack.mitre.org/techniques/T1156/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Account Manipulation	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"created accounts to local 
+admin groups to maintain
+ elevated access"	</td><td>	Mimikatz credential dumper  use for domain controller authentication bypass	</td><td>	<a href="	https://attack.mitre.org/techniques/T1098/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	AppCert DLLs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"AppCertDLLs value in the Registry
+key"	</td><td>		</td><td>	"Obtain Privilege Esclation 
+using Process Injection"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1182/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	AppInit DLLs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"AppInit_DLLs value in the Registry
+ keys"	</td><td>		</td><td>	"Obtain Privilege Esclation 
+using Process Injection"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1103/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Application Shimming	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Anyone to create and install Shim database files	</td><td>	<a href="	https://attack.mitre.org/techniques/T1138/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Authentication Package	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Windows Authentication 
+Package DLLs are loaded by 
+the Local Security Authority"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1131/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	BITS Jobs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Download and Execute file 
+using Bitsadmin"	</td><td>		</td><td>	"Persistence by creating 
+long-standing jobs"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1197/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Bootkit	</td><td>	1	</td><td>	1	</td><td>	0	</td><td>		</td><td>		</td><td>	"Modifies the boot sectors 
+of a hard drive, Master Boot Record and Volume Boot Record"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1067/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Browser Extensions	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Malicious extensions can 
+be installed into a browser 
+through malicious app store"	</td><td>	" Browse to websites in the background and Installer for a RAT for 
+persistence"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1176/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Change Default File Association	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"When a file is opened the 
+default program used to 
+open the file"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1042/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Component Firmware	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Compromise computer 
+components and 
+install malicious firmware e.g Rubber Ducky"	</td><td>		</td><td>	"Compromise computer 
+components and 
+install malicious firmware"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1109/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	"Component Object Model 
+Hijacking"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Registering the payload as a Shell 
+Icon Overlay handler COM object"	</td><td>	"Replacing the legitimate 
+MMDeviceEnumerator object with a payload"	</td><td>	"Persisting via COM hijacking
+ through replacement of the COM object for MruPidlList"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1122/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Create Account	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"""net user"" commands can be used 
+to create user"	</td><td>		</td><td>	"net user" commands can be used to create user	</td><td>	<a href="	https://attack.mitre.org/techniques/T1136/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	DLL Search Order Hijacking	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Windows DLL search order 
+that ambiguously 
+specify DLLs to gain persistence"	</td><td>	"Windows DLL search order 
+that ambiguously 
+specify DLLs to gain Privilege"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1136/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Dylib Hijacking	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"Ambiguous paths to plant
+ dylibs to gain persistence"	</td><td>	"Ambiguous paths to plant
+ dylibs to gain Privilege"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1157/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	External Remote Services	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Remote services such as 
+VPNs, Citrix, and other 
+for persistent"	</td><td>	"Remote services such as 
+VPNs, Citrix, and other 
+for lateral movement"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1133/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	File System Permissions Weakness	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Processes may automatically 
+execute specific binaries"	</td><td>	"Manipulation of Windows
+ service binaries is one 
+variation of this techniqu"	</td><td>	"weakness are common in 
+self-extracting installers."	</td><td>	<a href="	https://attack.mitre.org/techniques/T1044/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Hidden Files and Directories	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Simply do attrib +h filename to mark 
+a file or folder as hidden"	</td><td>	Create hidden ELF file 	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1158/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Hooking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Hooks procedures, which intercept 
+and execute designated code"	</td><td>	"IAT Hooking which use 
+modifications to a process’s IAT,"	</td><td>	Inline Hooking overwrites the first bytes in an API function to redirect code flow	</td><td>	<a href="	https://attack.mitre.org/techniques/T1179/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Hypervisor	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Common hypervisor is Xen
+Hypervisor  could be designed with rootkit"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1062/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Image File Execution Options Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Image File Execution 
+Options (IFEO) enable 
+a developer to attach 
+a debugger from registry"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1183/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Kernel Modules and Extensions	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	"LKMS can be type of 
+kernel-mode rootkit"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1215/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Launch Agent	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"Calisto adds .plist file to 
+/Library/LaunchAgents 
+folder to maintain persistence"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1159/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Launch Daemon	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"OSX_OCEANLOTUS.D can 
+create a persistence file in 
+the folder /Library/LaunchDaemons"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1160/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Launchctl	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"Calisto uses launchctl to 
+enable screen sharing on the victim’s machine"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1152/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	LC_LOAD_DYLIB Addition	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	LC LOAD DYLIB Addition	</td><td>	<a href="	https://attack.mitre.org/techniques/T1161/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Local Job Scheduling	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>	use crontab for ersistence.	</td><td>	Set Cron job  on mac devices  for  Persistence	</td><td>	<a href="	https://attack.mitre.org/techniques/T1168/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Login Item	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Persistence via a login item	</td><td>	<a href="	https://attack.mitre.org/techniques/T1162/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Logon Scripts	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>	"Persistence via adding a Registry 
+key with a logon script"	</td><td>	"Registry key 
+HKCU\Environment\UserInitMprLogonScript to establish persistence"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1037/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	LSASS Driver	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Infecting the Security 
+Accounts Manager (SAM) DLL to load a malicious DLL dropped to disk"	</td><td>	"Persistence via replacing or
+ adding illegitimate drivers"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1177/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Modify Existing Service	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Modify service configurations	</td><td>	"Drops a DLL file, to the 
+serviceDLL Registry key"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1031/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Netsh Helper DLL	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Persistency via persistence
+ proxy technique to execute a helper DLL"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1128/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	New Service	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Creates a new service for
+ persistence"	</td><td>	"Windows service to 
+establish persistence"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1050/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Office Application Startup	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Macro in Microsoft Outlook
+ for persistence"	</td><td>	"Persistency via Microsoft 
+Office by adding the Registry key HKCU\Software\Microsoft\Office test\Special\Perf "	</td><td>	<a href="	https://attack.mitre.org/techniques/T1137/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Path Interception	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Unquoted Paths, 
+Environment Variable 
+Misconfiguration and 
+Search Order Hijacking"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1034/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Plist Modification	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	"Modify these plist files to 
+point to their own code"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1150/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Port Knocking	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Provides a reverse shell is 
+triggered upon receipt of a packet with a special string"	</td><td>	Reverse shell upon receipt of a special packet	</td><td>	<a href="	https://attack.mitre.org/techniques/T1205/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Port Monitors	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"API call to set a DLL to be 
+loaded at startup"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1013/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Rc.common	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	"Entry to the rc.common file
+ for persistence"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1163/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Re-opened Applications	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	specify certain applications to be re-opened when a user reboots their machine	</td><td>	<a href="	https://attack.mitre.org/techniques/T1164/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Redundant Access	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Use multiple backdoors	</td><td>	"TeamViewer to preserve 
+remote access in case control"	</td><td>	Deployed backup web shells and obtained OWA account credentials	</td><td>	<a href="	https://attack.mitre.org/techniques/T1108/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Registry Run Keys / Startup Folder	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Deployed a tool to the Startup 
+folder of a victim"	</td><td>	"Modify the registry run 
+keys for persistence"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1060/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Scheduled Task	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Use scheduled tasks for execution	</td><td>	Scheduled task to execute a .vbe	</td><td>	 Persistency via Scheduled tasks 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1053/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Screensaver	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Persistence through the system screensaver by configuring it	</td><td>	<a href="	https://attack.mitre.org/techniques/T1180/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Security Support Provider	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Persistency via installing a
+ SSP DLL"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1101/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	"Service Registry Permissions 
+Weakness"	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Persistency via modify the
+HKLM\SYSTEM\CurrentControlSet\Services "	</td><td>	<a href="	https://github.com/veramine/Detections/wiki/Service-Registry-Permissions-Weakness	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Esclation	</td><td>	Setuid and Setgid	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Setuid flag to a binary so it
+ can easily elevate"	</td><td>	Persistency via binary to setuid flag	</td><td>	<a href="	https://attack.mitre.org/techniques/T1166/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Shortcut Modification	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Windows shortcut file for execution	</td><td>	Modified LNK shortcuts	</td><td>	"Persistency via Empire to 
+modifying a .LNK file to include a backdoor"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1023/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	SIP and Trust Provider Hijacking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"SIP and Trust Provider 
+Hijacking"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1198/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Startup Items	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Startup items execute during the final phase of the boot process from the /Library/StartupItems.Startup item is a directory whose executable and configuration property list	</td><td>	<a href="	https://attack.mitre.org/techniques/T1165/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	System Firmware	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"UEFI BIOS rootkit deployed
+ via remote access software"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1019/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Systemd Service	</td><td>	0	</td><td>	1	</td><td>	0	</td><td>		</td><td>		</td><td>	Persistency via systemd service	</td><td>	<a href="	https://attack.mitre.org/techniques/T1501/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Time Providers	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	"Persistency via replacing 
+the w32time.dll"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1209/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Trap	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	"ctrl+c and ctrl+d, can use to
+ executed code when the interrupts call"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1154/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Valid Accounts	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Client System Accounts	</td><td>	"Network Devices e.g 
+routers or firewall"	</td><td>	"Internal Applications such 
+as shared directories, 
+active directories or mail servers"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1078/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Web Shell	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Uploading shell e.g ChinaChopper, 
+ASPxspy "	</td><td>	Proxy Shell	</td><td>	"Create HTTP Server for 
+web shell"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1100/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	"Windows Management 
+Instrumentation Event Subscription"	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Persistency via WMI - 1	</td><td>	Persistency via WMI - 2	</td><td>	Persistency via WMI - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1084/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Persistence	</td><td>	Winlogon Helper DLL	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Registers as a Winlogon Event Notify 
+DLL to establish persistence"	</td><td>	Issues the command reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" to achieve persistence	</td><td>	<a href="	https://attack.mitre.org/techniques/T1004/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Access Token Manipulation	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Empire to manipulate access tokens	</td><td>	Abuse CVE-2015-1701 to access the SYSTEM token and copy it into the current process as part of privilege escalation	</td><td>	<a href="	https://attack.mitre.org/techniques/T1134/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Accessibility Features	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Replace the Sticky Keys binary C:\Windows\System32\sethc.exe for persistence	</td><td>	Use Empire to leverage WMI debugging to remotely replace binaries like sethc.exe, Utilman.exe, and Magnify.exe with cmd.exe	</td><td>	<a href="	https://attack.mitre.org/techniques/T1015/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	AppCert DLLs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Privielege Escalation via AppCert DLLs	</td><td>	<a href="	https://attack.mitre.org/techniques/T1182/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	AppInit DLLs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Privielege Escalation via AppInit DLLs	</td><td>	<a href="	https://attack.mitre.org/techniques/T1103/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Application Shimming	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Use Application shim databases for Escalation	</td><td>	<a href="	https://attack.mitre.org/techniques/T1138/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Bypass User Account Control	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Bypass UAC via Metasploit Module	</td><td>	Empire includes various modules to attempt to bypass UAC for escalation of privileges, PoshC2 can utilize multiple methods to bypass UAC	</td><td>	Bypass user access control by using a DLL hijacking vulnerability in the Windows Update Standalone Installer (wusa.exe), perform UAC bypass by using eventvwr.exe to execute a malicious file	</td><td>	<a href="	https://attack.mitre.org/techniques/T1088/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	DLL Search Order Hijacking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Use Empire modules to discover and exploit DLL hijacking opportunities, Use PowerSploit collection of Privesc-PowerUp modules that can discover and exploit DLL hijacking opportunities in services and processes.	</td><td>	Use search order hijacking of the Windows executable sysprep.exe to escalate privileges,	</td><td>	<a href="	https://attack.mitre.org/techniques/T1088/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Dylib Hijacking	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Privilege Escalation via Dylib Hijacking	</td><td>	<a href="	https://attack.mitre.org/techniques/T1157/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Exploitation for Privilege Escalation	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	Exploit CVE-2014-4076, CVE-2015-2387, CVE-2015-1701, CVE-2017-0263,CVE-2016-7255 etc to escalate privileges.	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1068/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Extra Window Memory Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Execute malicious code in the context of the explorer.exe process	</td><td>	Return-oriented programming chain and create a malicious thread within Explorer.exe	</td><td>	<a href="	https://attack.mitre.org/techniques/T1181/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	File System Permissions Weakness	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Abusing File System Permissions Weakness - 1	</td><td>	Abusing File System Permissions Weakness - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1044/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Hooking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Use Empire modules that leverage API hooking to carry out tasks, such as netripper	</td><td>	"SetWindowsHookEx and 
+begins injecting it into every GUI process"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1179/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	"Image File Execution Options 
+Injection"	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Image File Execution Options Injection - 1	</td><td>	Image File Execution Options Injection - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1183/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Launch Daemon	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	Abusing Launch Daemons - 1	</td><td>	Abusing Launch Daemons - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1160/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	New Service	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Create new services to establish persistence, install a service pointing to a malicious DLL dropped to disk	</td><td>	<a href="	https://attack.mitre.org/techniques/T1050/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Path Interception	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Abusing Unqouted services paths	</td><td>	Use Empire modules that can discover and exploit various path interception opportunities,	</td><td>	Use PowerSploit collection of Privesc-PowerUp modules that can discover and exploit various path interception opportunities in services, processes, and variables	</td><td>	<a href="	https://attack.mitre.org/techniques/T1034/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Plist Modification	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Modify plist files to point to your own code to gain Privilege Escalation	</td><td>	<a href="	https://attack.mitre.org/techniques/T1150/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Port Monitors	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Privilege Escalation via API call to set a DLL	</td><td>	<a href="	https://attack.mitre.org/techniques/T1013/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Process Injection	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Injects process into the cmd.exe process	</td><td>	Injects itself into explorer.exe	</td><td>	injects itself into the secure shell (SSH) process	</td><td>	<a href="	https://attack.mitre.org/techniques/T1055/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Scheduled Task	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Hijacked scheduled tasks to establish persistence and Esclation	</td><td>	"Created a scheduled task 
+to execute a .vbe"	</td><td>	Scheduled tasks to maintain RDP backdoors	</td><td>	<a href="	https://attack.mitre.org/techniques/T1053/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	"Service Registry Permissions 
+Weakness"	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Service's Registry keys can be manipulated to modify a service's execution parameters through tools such as the service controller, sc.exe, PowerShell, or Reg, Change the service binPath/ImagePath to point to a different executable under your control. 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1058/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Setuid and Setgid	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Abusing Setuid and Setgid - 1	</td><td>	Abusing Setuid and Setgid - 2	</td><td>	Abusing Setuid and Setgid - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1166/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	SID-History Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Use Empire to add a SID-History to a user if on a domain controller, Use Mimikatz's MISC::AddSid module to append any SID or user/group account to a user's SID-History, Use Mimikatz to utilize SID-History Injection to expand the scope of other components such as generated Kerberos Golden Tickets and DCSync beyond a single domain.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1178/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Startup Items	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Startup items execute during the final phase of the boot process from the /Library/StartupItems.Startup item is a directory whose executable and configuration property list	</td><td>	<a href="	https://attack.mitre.org/techniques/T1165/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Sudo	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Abusing Sudo rights - 1	</td><td>	Abusing Sudo rights - 2	</td><td>	Abusing Sudo rights -3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1169/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Sudo Caching	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Abusing Sudo caching - 1	</td><td>	Abusing Sudo Caching - 2 	</td><td>	Abusing Sudo Caching - 3 (modifiy the tty_tickets line in the sudoers file)	</td><td>	<a href="	https://attack.mitre.org/techniques/T1206/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Valid Accounts	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Create User account on Victim Machine	</td><td>	lateral Movement through stealing the credentials to other devices	</td><td>	"Stealing Domain 
+Controller Credentials"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1078/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Privilege Escalation	</td><td>	Web Shell	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Use Web shells on publicly accessible Web servers to access victim networks	</td><td>	<a href="	https://attack.mitre.org/techniques/T1100/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Access Token Manipulation	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Empire can use Invoke-Run
+As to make tokens and 
+PowerSploit's Invoke-TokenManipulation to 
+manipulate access tokens"	</td><td>	"Grabs a user token using 
+WTSQueryUserToken and then creates a process by impersonating a logged-on user"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1134/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Binary Padding	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Change static signature of malware to Bypass AV	</td><td>	"Change signature with 
+hex padding"	</td><td>	Modifiy the signed binary with PE section	</td><td>	<a href="	https://attack.mitre.org/techniques/T1009/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	BITS Jobs	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Windows Defender Evasion	</td><td>	Major AV Product Evasion	</td><td>	Network Devices Evasion	</td><td>	<a href="	https://attack.mitre.org/techniques/T1197/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Bypass User Account Control	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Bypass UAC via Metasploit Module and Evade UAC Bypass	</td><td>	Empire includes various modules to attempt to bypass UAC for escalation of privileges, PoshC2 can utilize multiple methods to bypass UAC	</td><td>	Bypass user access control by using a DLL hijacking vulnerability in the Windows Update Standalone Installer (wusa.exe), perform UAC bypass by using eventvwr.exe to execute a malicious file	</td><td>	<a href="	https://attack.mitre.org/techniques/T1088/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Clear Command History	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	"flushing the file in the user's home 
+directory called ~/.bash_history"	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1146/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	CMSTP	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Abuse CMSTP.exe to load and execute DLLs and/or COM scriptlets (SCT)	</td><td>	Use cmstp.exe to bypass AppLocker and launch a malicious script	</td><td>	Abuse CMSTP.exe to load and execute DLLs and/or COM scriptlets (SCT) from remote server, Abuse CMSTP.exe to Bypass User Account Control and execute arbitrary commands from a malicious INF through an auto-elevated COM interface	</td><td>	<a href="	https://attack.mitre.org/techniques/T1191/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Code Signing	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>		</td><td>	Sign a binary with fake certificate	</td><td>	"Find digitally signed binary
+ to run malware"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1116/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Compile After Delivery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"compile code on target 
+system using  csc.exe"	</td><td>	compile code in memory and execute using MSBuild.exe	</td><td>	<a href="	https://attack.mitre.org/techniques/T1500/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Compiled HTML File	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"create CHM file with melecious 
+code to bypass application whitelisting"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1223/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Component Firmware	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"LSADUMP::DCShadow 
+module can be used to 
+make AD updates by 
+temporarily setting a computer to be a DC"	</td><td>	"Registering a rogue DC 
+involves creating a new server to Bypass SIEM solutions"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1109/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Component Object Model Hijacking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Registering the payload as a Shell 
+Icon Overlay handler COM object"	</td><td>	"Replacing the legitimate 
+MMDeviceEnumerator object with a payload"	</td><td>	"COM hijacking
+ through replacement of the COM object for MruPidlList"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1122/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Control Panel Items	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Drop and executes a malicious CPL file as payload to gain Execution - 1	</td><td>	Drop and executes a malicious CPL file as payload to gain Execution - 2	</td><td>	Use Control Panel items as execution payloads to execute arbitrary commands	</td><td>	<a href="	https://attack.mitre.org/techniques/T1196/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	DCShadow	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Manipulating Active Directory data,
+ including objects and schemas, by registering and simulating the behavior of Domain Controller"	</td><td>	"Manipulating Active 
+Directory using DCShadow"	</td><td>	"Mimikatz’s 
+LSADUMP::DCShadow module can be used to make AD updates by temporarily setting a computer to be a DC"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1207/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Deobfuscate/Decode Files or Information	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Certutil used to decode binaries 
+hidden inside certificate files"	</td><td>	"Decrypt, unpack and load 
+a DLL from its resources"	</td><td>	"Decodes the 
+initially-downloaded hidden encoded file using OpenSSL"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1140/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Disabling Security Tools	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Delete Registry keys of AV so that it
+ cannot start at restart"	</td><td>	Disable Antivirus - 1	</td><td>	Disable Antivirus - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1089/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	DLL Search Order Hijacking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Empire contains modules that can 
+discover various DLL hijacking"	</td><td>	DLL Hijacking normal user with persistence	</td><td>	DLL Hijacking admin user with persistence	</td><td>	<a href="	https://attack.mitre.org/techniques/T1038/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	DLL Side-Loading	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	DLL Side loading - 1	</td><td>	DLL Side loading - 2	</td><td>	DLL Side loading - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1073/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Execution Guardrails	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Guardrails - 1	</td><td>	Guardrails - 2	</td><td>	Guardrails - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1480/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Exploitation for Defense Evasion	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	CVE-2015-4902	</td><td>	CVE-2017-11882	</td><td>	CVE-2018-8750	</td><td>	<a href="	https://attack.mitre.org/techniques/T1211/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Extra Window Memory Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Load PE	</td><td>	RUN PE	</td><td>	Reflective DLL Injection	</td><td>	<a href="	https://attack.mitre.org/techniques/T1181/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	File Deletion	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	File Deletion - 1	</td><td>	File Deletion - 2	</td><td>	File Deletion - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1107/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	File Permissions Modification	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	File Permissions Modification - 1	</td><td>	"File Permissions 
+Modification - 2"	</td><td>	"File Permissions 
+Modification - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1222/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	File System Logical Offsets	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	NinjaCopy - 1	</td><td>	NinjaCopy - 2	</td><td>	NinjaCopy - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1006/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Gatekeeper Bypass	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>	Bypass GateKeeper - 1	</td><td>	Bypass GateKeeper - 2	</td><td>	Bypass GateKeeper - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1144/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Group Policy Modification	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Empire can use 
+New-GPOImmediateTask to modify a GPO - 1"	</td><td>	"Empire can use 
+New-GPOImmediateTask to modify a GPO - 2"	</td><td>	"Empire can use 
+New-GPOImmediateTask to modify a GPO - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1484/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Hidden Files and Directories	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Hide files in windows	</td><td>	Hide files in linux	</td><td>	Hide file in MAC-OS	</td><td>	<a href="	https://attack.mitre.org/techniques/T1158/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Hidden Users	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	Create Account technique with a userID under 500	</td><td>	<a href="	https://attack.mitre.org/techniques/T1147/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Hidden Window	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	Java applications to prevent the application's icon from appearing in the Dock	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1143/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	HISTCONTROL	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	HISTCONTROL can also be set to ignore duplicate commands by setting it to "ignoredups"	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1148/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Image File Execution Options Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Set IFEO registry with calc.exe	</td><td>	Set IFEO registry with sub application 	</td><td>	Set IFEO with reverse shell	</td><td>	<a href="	https://attack.mitre.org/techniques/T1183/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Indicator Blocking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Modifying sensor settings 
+stored in configuration files - 1"	</td><td>	"Modifying sensor settings 
+stored in configuration files - 2"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1054/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Indicator Removal from Tools	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"PowerSploit's Bypass AVSignature 
+locate single byte anti-virus signatures"	</td><td>	"Adding four bytes of random 
+letters in a likely attempt to change the file hashes"	</td><td>	"Cobalt Strike modify the 
+""beacon"" payload to eliminate known signatures"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1066/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Indicator Removal on Host	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Clear Windows Event Logs using 
+commands"	</td><td>	"Clear Windows Event 
+Logs  - 1"	</td><td>	"Clear Windows Event 
+Logs  - 2"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1070/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Indirect Command Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Indirect Command Execution - 1	</td><td>	"Indirect Command 
+Execution - 2"	</td><td>	"Indirect Command 
+Execution - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1202/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Install Root Certificate	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Certutil can be used to install 
+browser root certificates"	</td><td>	"Dok installs root certificate 
+to aid in man-in-the-middle actions"	</td><td>	"RTM can add a certificate to 
+the Windows store"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1130/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	InstallUtil	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	 InstallUtil to proxy execution of code  through a trusted Windows utility	</td><td>	"InstallUtil also be used to 
+bypass process whitelisting"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1118/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Launchctl	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"launchctl to enable screen 
+sharing on the victim’s machine"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1152/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	LC_MAIN Hijacking	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>	Code Caving - 1	</td><td>	Code Caving - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1149/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Masquerading	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	 Abuse of trusted locations - 1	</td><td>	 Abuse of trusted locations - 2	</td><td>	 Abuse of trusted locations - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1036/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Modify Registry	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Delete Registry for Microsoft Office 
+Security"	</td><td>	Delete Registry for AV Startup	</td><td>	Add registry key as root class	</td><td>	<a href="	https://attack.mitre.org/techniques/T1112/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Mshta	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Mshta used to bypass win-10 
+smart screen"	</td><td>	Execute inline script using MSHTA	</td><td>	"Run .hta file with DLL 
+Hijacking"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1170/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Network Share Connection Removal	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"The net use \system\share /delete 
+command can be used in Net to remove an established connection"	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1126/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	NTFS File Attributes	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Hide and execute ADS stream - 1	</td><td>	Hide and execute ADS stream - 2	</td><td>	Hide and execute ADS stream - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1096/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Obfuscated Files or Information	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Obfuscate file and embed in image 	</td><td>	Obfuscate file and embed in document - 1	</td><td>	Obfuscate file and embed in document - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1027/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Plist Modification	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>	Create PLIST entry as user and run a file	</td><td>		</td><td>	Create PLIST entry as admin and run a file	</td><td>	<a href="	https://attack.mitre.org/techniques/T1150/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Port Knocking	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Reverse 
+shell upon receipt of a packet with a special string sent to any port"	</td><td>	Reverse shell upon receipt of a special packet	</td><td>	<a href="	https://attack.mitre.org/techniques/T1205/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Process Doppelgänging	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	File-less variation of Process Injection	</td><td>	<a href="	https://github.com/3gstudent/Inject-dll-by-Process-Doppelganging	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Process Hollowing	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Create a Process in suspended state 
+then its memory is unmapped and replaced with malicious code - 1"	</td><td>	"Create a Process in suspended state 
+then its memory is unmapped and replaced with malicious code - 2"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1093/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Process Injection	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Executable Injection for Windows	</td><td>	DLL Injection 	</td><td>	Empire contains multiple modules for injecting into processes	</td><td>	<a href="	https://attack.mitre.org/techniques/T1055/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Redundant Access	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"More than one remote access tool 
+with varying command and control protocols - 1"	</td><td>	"More than one remote access tool 
+with varying command and control protocols - 2"	</td><td>	"More than one remote access tool 
+with varying command and control protocols - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1108/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Regsvcs/Regasm	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Register .NET Component Object 
+Model (COM) assemblies - 1"	</td><td>	Register .NET Component Object Model (COM) assemblies - 2	</td><td>	Register .NET Component Object Model (COM) assemblies -3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1121/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Regsvr32	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Execute script with regsvr32.exe	</td><td>	"Run a .sct file using 
+regsvr32.exe"	</td><td>	"Register and execute DLL 
+using Regsvr32"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1117/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Rootkit	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Root Kit for Windows	</td><td>	Root Kit for Linux	</td><td>	Root Kit for Mac OS	</td><td>	<a href="	https://attack.mitre.org/techniques/T1014/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Rundll32	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Read ADS using Rundll32	</td><td>	Read and Execute ADS using  Rundll32	</td><td>	<a href="	https://attack.mitre.org/techniques/T1085/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Scripting	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Empire  modules for scripts 
+executing "	</td><td>	"Run HTA files with 
+VBScript+JScript from another Binary on Windows"	</td><td>	Execute bash script from another binary on Linux	</td><td>	<a href="	https://attack.mitre.org/techniques/T1064/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Signed Binary Proxy Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Msiexec.exe to launch malicious 
+MSI installer"	</td><td>	"Mavinject can be used to 
+inject a DLL into a running process"	</td><td>	"SyncAppvPublishingServer.exe 
+used to run PowerShell scripts"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1218/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Signed Script Proxy Execution	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Use CSC.EXE to compile C# code 
+stored in File.cs"	</td><td>	"cscript.exe to exectute a 
+Visual Basic script"	</td><td>	"used PubPrn.vbs within 
+execution scripts to execute malware"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1216/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	SIP and Trust Provider Hijacking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Modifying the Dll and FuncName 
+Registry values - 1"	</td><td>	"Modifying the Dll and FuncName 
+Registry values - 2"	</td><td>	"Modifying the Dll and FuncName 
+Registry values - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1198/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Software Packing	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	UPX packer use for packing malware	</td><td>	Create Custom Packer for Windows	</td><td>	Create Custom Packer for Linux	</td><td>	<a href="	https://attack.mitre.org/techniques/T1045/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Space after Filename	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	Append space at the end of file name in Apple	</td><td>	Append space at the end of file name in Linux	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1151/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Template Injection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Download Melecious Document from another Document	</td><td>	Download Exploit Document from another Document	</td><td>	<a href="	https://attack.mitre.org/techniques/T1221/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Timestomp	</td><td>	1	</td><td>	1	</td><td>	0	</td><td>	"China Chopper's server component 
+change the timestamp of files"	</td><td>	"Empire can timestomp any 
+files or payloads placed on a target"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1099/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Trusted Developer Utilities	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Empire use built-in modules to abuse  trusted utilities like MSBuild.exe	</td><td>	use msbuild to compile and  execute source code - 1	</td><td>	use msbuild to compile and  execute source code - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1127/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Valid Accounts	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Create User account on Victim Machine	</td><td>	lateral Movement through stealing the credentials to other devices	</td><td>	"Stealing Domain 
+Controller Credentials"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1078/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Virtualization/Sandbox Evasion	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Detect Virtual Machine and stop execution	</td><td>	Detect sandbox and stop execution	</td><td>	"Detect FireEye and stop 
+execution"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1497/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	Web Service	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Popular social media sites use for C2  -1	</td><td>	Popular social media sites use for C2  -2	</td><td>	Popular social media sites use for C2  -3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1102/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Defense Evasion	</td><td>	XSL Script Processing	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Execute malware with msxsl.exe 
+to .xsl"	</td><td>	Execute malware with wmic to .xsl	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1220/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Account Manipulation	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Use Mimikatz credential dumper for
+ manipulating password's hashes "	</td><td>	Gain Elevated access to system with credentials	</td><td>	Create admin user on system 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1098/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Bash History	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>	"Abuse the bash_history for 
+potential credentials"	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1139/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Brute Force	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Brute Force Credentials - 1	</td><td>	Brute Force Credentials - 2	</td><td>	Brute Force Credentials - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1110/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Credential Dumping	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Dump cached credentials using 
+pwdumpx.exe "	</td><td>	Dump Windows password hashes using Fgdump	</td><td>	Dump password using MimiPenguin 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1003/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Credentials in Files	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Use Empire to search for files, 
+which containing passwords"	</td><td>	"Obtain passwords from 
+FTP clients"	</td><td>	Obtain MySQL,SQL Password  and get system shell	</td><td>	<a href="	https://attack.mitre.org/techniques/T1081/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Credentials in Registry	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Search credentials from Windows 
+Registry using PowerSploit "	</td><td>	"Search credentials from 
+Windows Registry using reg - 1"	</td><td>	"Search credentials from 
+Windows Registry using reg - 2"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1214/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Exploitation for Credential Access	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Use MS14-068 for privilege Esclation	</td><td>	Use Dirty Cow for Esclation	</td><td>	MYSQL UDF Injection 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1212/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Forced Authentication	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Gathered hashed user 
+credentials over SMB using spearphishing attachments"	</td><td>	"Template Injection to 
+launch an authentication window for users to enter their credentials"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1187/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Hooking	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Empire contains some modules that 
+leverage API hooking to carry out tasks"	</td><td>	"Windows hook interfaces 
+for information gathering such as credential access"	</td><td>	"Capture RDP credentials by
+ capturing the CredEnumerateA API"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1179/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Input Capture	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Key Logging - 1	</td><td>	Key Logging - 2	</td><td>	Key Logging - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1056/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Input Prompt	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>	"Prompt user to Enter their 
+Credentials -1"	</td><td>	"Prompt user to Enter their 
+Credentials -2"	</td><td>	"Prompt user to Enter their 
+Credentials -3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1141/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Kerberoasting	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Get crackable ticket hashes via 
+empire using PowerSploit's Invoke-Kerberoast"	</td><td>	Kerberoasting Attack- 1	</td><td>	Kerberoasting Attack- 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1208/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Keychain	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	"Read Credentials from 
+Keychain file"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1142/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	LLMNR/NBT-NS Poisoning and Relay	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"use Responder to poison name 
+services to gather hashes and credentials from systems within a local network"	</td><td>	"Use Empire Inveigh to 
+conduct name service poisoning for credential theft"	</td><td>	Use Impacket for code execution after getting credentials	</td><td>	<a href="	https://attack.mitre.org/techniques/T1171/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Network Sniffing	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Capture plain text password using 
+SniffPass"	</td><td>	"Deploy Responder on 
+target Host and capture hashes in order to crack and got password "	</td><td>	"Hook network APIs to 
+monitor network traffic"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1040/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Password Filter DLL	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>		</td><td>	Read Plain-text credentials as a password filter registered on domain controllers	</td><td>	<a href="	https://attack.mitre.org/techniques/T1174/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Private Keys	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Use Empire to extract private key 
+and session information"	</td><td>	Steal keys for VPNs	</td><td>	"Mimikatz's 
+CRYPTO::Extract module can extract keys"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1145/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Securityd Memory	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	"Read securityd’s memory 
+and find correct sequence of keys"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1167/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Credential Access	</td><td>	Two-Factor Authentication Interception	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Bypass Two Factor Authentication e.g SmartCard , Email or SMS	</td><td>	<a href="	https://attack.mitre.org/techniques/T1111/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Account Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Net Utility (Windows), dscacheutil (Mac), Dsquery (Windows), Groups (linux)	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1087/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Application Window Discovery	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>	Active Window Information	</td><td>	ifnormation of all Application	</td><td>	Find Target Application for admin/root Access	</td><td>	<a href="	https://attack.mitre.org/techniques/T1010/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Browser Bookmark Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Collect password from 
+browser using passcat"	</td><td>	Collection of browser data via Empire	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1217/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Domain Trust Discovery	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Dsquery, Nltest	</td><td>	Powersploit	</td><td>	Enumerate domain trusts via Empire, PoshC2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1482/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	File and Directory Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Dir/tree for Windows and ls, find, and locate for Linux and Mac	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1083/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Network Service Scanning	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Services scanning via Nmap	</td><td>	Port scanning via Ncat	</td><td>	Custom Port Scanner	</td><td>	<a href="	https://attack.mitre.org/techniques/T1046/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Network Share Discovery	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>	Discover share directories via Enum4Linux	</td><td>	Discover shared directories via Python script	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1135/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Network Sniffing	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Captures the Network Packets via Empire	</td><td>	Captures hashes and credentials that are sent to the system after the name services have been poisoned via Responder	</td><td>	Collect credentials by sniffing the network traffic SniffPass	</td><td>	<a href="	https://attack.mitre.org/techniques/T1040/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Password Policy Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Net Utility (Windows), chage (Linux), pwpolicy (Mac)	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1201/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Peripheral Device Discovery	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	List of Connected devices	</td><td>	Prompt a notification, while usb is connecting	</td><td>	Collect information of connected printers	</td><td>	<a href="	https://attack.mitre.org/techniques/T1120/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Permission Groups Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Net Utility (Windows), dscacheutil (Mac), dscl (Mac), Groups,Ldapsearch (Linux)	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1069/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Process Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Enumerate process via Tasklist or ps	</td><td>	Enumerate process via Metasploit	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1057/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Query Registry	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Enumerates values in the Registry via reg Query	</td><td>	Enumerates values in the Registry via WMI	</td><td>	Enumerate and modify registry keys, Point it to backdoor executable	</td><td>	<a href="	https://attack.mitre.org/techniques/T1012/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Remote System Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Ping,Net Utility,dsquery Enumerating hosts file, bonjour (Mac)	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1018/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Security Software Discovery	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>	Security Software Discovery via WMI or Powershell	</td><td>	Enumerate Antivirus via Empire	</td><td>	Detect the presense of Antivirus softwares,Use registry keys to detect and avoid executing in potential sandboxes	</td><td>	<a href="	https://attack.mitre.org/techniques/T1063/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	System Information Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	ver,systeminfo,dir,systemsetup,system_profiler(Mac)	</td><td>	System Information Discovery via Metasploit and Empire	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1082/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	"System Network Configuration 
+Discovery"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Arp, ipconfig/ifconfig, nbtstat, and route are used for Discovery	</td><td>	Linux find all Active IP Address on LAN	</td><td>	Windows find all Active IP Address on LAN	</td><td>	<a href="	https://attack.mitre.org/techniques/T1016/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	"System Network Connections 
+Discovery"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	netstat,net utility, lsof	</td><td>	"Find active ports on 
+target machine"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1049/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	System Owner/User Discovery	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	User enumeration via netcat	</td><td>	Collects the username from the victim’s machin	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1033/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	System Service Discovery	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Enumerate services via netcat	</td><td>	Enumerate services via script	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1007/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	System Time Discovery	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Collect the timestamp from Victim Machine (Nmap, Net time, w32tm)	</td><td>		</td><td>	Obtain the system time and send it to the C2 Server	</td><td>	<a href="	https://attack.mitre.org/techniques/T1124/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Discovery	</td><td>	Virtualization/Sandbox Evasion	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Print a special string on the detection of virtual Machine	</td><td>		</td><td>	Detect sandbox analysis environments by inspecting the process list and Registry via script/Program	</td><td>	<a href="	https://attack.mitre.org/techniques/T1497/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	AppleScript	</td><td>	0	</td><td>	0	</td><td>	1	</td><td>		</td><td>		</td><td>	User AppleScript for lateral movment after login into LAN PC	</td><td>	<a href="	https://attack.mitre.org/techniques/T1155/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Application Deployment Software	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Deployment a software on enterprise deployment network	</td><td>	<a href="	https://attack.mitre.org/techniques/T1017/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Distributed Component Object Model	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Use Empire to leverage 
+remote COM execution for lateral movement"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1175/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Exploitation of Remote Services	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Exploiting SMB via a (MS17-010) to 
+achieve lateral movement"	</td><td>	"Use MS10-061 to exploit a 
+print spooler vulnerability in order to move laterally."	</td><td>	Lateral Movement via lib-ssh 	</td><td>	<a href="	https://attack.mitre.org/techniques/T1210/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Logon Scripts	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>		</td><td>	"Script stored on a central server and 
+pushed to many systems for lateral movement"	</td><td>	Execute a script via login hook on MAC OS	</td><td>	<a href="	https://attack.mitre.org/techniques/T1037/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Pass the Hash	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	Lateral Movement via PassTheHash Attack using metasploit	</td><td>	Lateral Movement via PassTheHash Attack	</td><td>	<a href="	https://attack.mitre.org/techniques/T1075/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Pass the Ticket	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>		</td><td>	"Mimikatz’s modules 
+implement the three steps required to extract the krbtgt account hash and create/use Kerberos tickets"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1097/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Remote Desktop Protocol	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Enable and access remote Desktop on Target for lateral Movement -1	</td><td>	Enable and access remote Desktop on Target for lateral Movement -2	</td><td>	Enable and access remote Desktop on Target for lateral Movement - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1076/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Remote File Copy	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Lateral Movement via file Copy - 1	</td><td>	"Lateral Movement via 
+file Copy - 2"	</td><td>	"Lateral Movement via 
+file Copy - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1105/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Remote Services	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	SSH  - 1	</td><td>	VNC	</td><td>	SSH  - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1021/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	"Replication Through 
+Removable Media"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Replication Through Removable Media for lateral Movement -1	</td><td>	Replication Through Removable Media for lateral Movement - 2	</td><td>	Replication Through Removable Media for lateral Movement - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1091/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Shared Webroot	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	lateral movement via shared webroot - 1	</td><td>	lateral movement via shared webroot - 2	</td><td>	lateral movement via shared webroot - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1051/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	SSH Hijacking	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	"Lateral Movemnet via injection attack into existing SSH session rather than creating a new 
+session using Valid Accounts"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1184/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Taint Shared Content	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Lateral Movement via copying the melecious file on Share 
+Directory -1"	</td><td>	"Lateral Movement via copying the melecious file on Share 
+Directory -2"	</td><td>	"Lateral Movement via copying the melecious file on Share 
+Directory -3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1080/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Third-party Software	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Lateral Movement via deploying the third-party application deployment systems installed within an enterprise network - 1	</td><td>	Lateral Movement via deploying the third-party application deployment systems installed within an enterprise network - 2	</td><td>	Lateral Movement via deploying the third-party application deployment systems installed within an enterprise network - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1072/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Windows Admin Shares	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	Lateral Movement via Write file to SMB share(Admin) and execute -1	</td><td>	Lateral Movement via PsExec to write a programs to the ADMIN$ network share to execute commands on remote systems	</td><td>	Lateral Movement via Write file to SMB share(Admin) and execute -2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1077/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Lateral Movement	</td><td>	Windows Remote Management	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Lateral Movement via WinRM to execute a payload on a 
+remote host - 1"	</td><td>	"Lateral Movement via WinRM to execute a payload on a 
+remote host - 2"	</td><td>	"Lateral Movement via WinRM to execute a payload on a 
+remote host - 3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1028/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Audio Capture	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"Use PowerSploit's to record system 
+microphone audio"	</td><td>	"Record system 
+microphone audio - 2"	</td><td>	"Record system 
+microphone audio -  3"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1123/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Automated Collection	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Capture user data and upload to remote Server - 1	</td><td>	Capture user data and upload to remote Server - 2	</td><td>	Capture user data and upload to remote Server - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1119/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Clipboard Data	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Capture Clip Board Data - 1	</td><td>	Capture Clip Board Data - 2	</td><td>	Capture Clip Board Data - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1115/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Data from Information Repositories	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	SharePoint Enumeration	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1213/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Data from Local System	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	China Chopper's server component can upload local files	</td><td>	"njRAT can collect data 
+from a local system"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1005/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Data from Network Shared Drive	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Mounting network shares 
+with net use and using Robocopy to transfer data"	</td><td>	steals user files from network shared drives with file extensions and keywords that match a predefined list	</td><td>	<a href="	https://attack.mitre.org/techniques/T1039/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Data from Removable Media	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Collect Data From USB/Removable Media - 1	</td><td>	Collect Data From USB/Removable Media - 2	</td><td>	Collect Data From USB/Removable Media - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1025/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Data Staged	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>	"Common functionality 
+within cmd and bash may be used to copy data into a staging location"	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1074/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Email Collection	</td><td>	1	</td><td>	0	</td><td>	0	</td><td>	"Using Empire to collect emails on a 
+target system"	</td><td>	Pupy can interact with a victim’s Outlook session and look through folders and emails	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1114/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Input Capture	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Key Logging - 1	</td><td>	Key Logging - 2	</td><td>	Key Logging - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1056/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Man in the Browser	</td><td>	1	</td><td>		</td><td>		</td><td>		</td><td>		</td><td>	"Attacks via web injects to steal information such as 
+credentials, certificates, and cookies"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1185/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Screen Capture	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	"njRAT can capture screenshots of 
+the victim’s machines."	</td><td>	Take ScreenShots via Metasploit	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1113/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Collection	</td><td>	Video Capture	</td><td>	1	</td><td>	0	</td><td>	1	</td><td>		</td><td>	Revenge RAT has the ability to access the webcam	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1125/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Commonly Used Port	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Communication to C2 Server over Port 80,443	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1436/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	"Communication Through 
+Removable Media"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	USBStealer - 1	</td><td>	USBStealer - 2	</td><td>	USBStealer - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1092/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Connection Proxy	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Establishes SOCKS5 connections for its initial C2	</td><td>	Establishes a connections to C2 as reverse proxy	</td><td>	Relays traffic between a C2 server and a victim	</td><td>	<a href="	https://attack.mitre.org/techniques/T1090/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	"Custom Command and Control 
+Protocol"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Open Source Command and Control 	</td><td>	Custom Command and Control -1 	</td><td>	Custom Command and Control -2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1094/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Custom Cryptographic Protocol	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Encrypts C2 data with Encryption	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1024/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Data Encoding	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Encoding C2 data with Encryption	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1132/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Data Obfuscation	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Obfuscation of C2 data with Encryption	</td><td>		</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1001/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Domain Fronting	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Hide the destination of C2 traffic - 1	</td><td>	Hide the destination of C2 traffic - 2	</td><td>	Hide the destination of C2 traffic - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1172/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Domain Generation Algorithms	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Many DGAs are time-based, generating a different domain for each time period	</td><td>	<a href="	https://attack.mitre.org/techniques/T1483/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Fallback Channels	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Remote attackers can change C2 servers - 1	</td><td>	Remote attackers can change C2 servers - 2	</td><td>	Remote attackers can change C2 servers - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1008/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Multi-hop Proxy	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Uses Tor for command and control.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1188/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Multi-Stage Channels	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	MultiStage Attacking Mechanism - 1	</td><td>	MultiStage Attacking Mechanism - 2	</td><td>	MultiStage Attacking Mechanism - 3	</td><td>	<a href="	https://attack.mitre.org/techniques/T1104/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Multiband Communication	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Use multiple network protocols to avoid network-based detection	</td><td>	<a href="	https://attack.mitre.org/techniques/T1026/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Multilayer Encryption	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Tor encapsulates traffic in multiple layers of encryption	</td><td>	<a href="	https://attack.mitre.org/techniques/T1079/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Port Knocking	</td><td>	0	</td><td>	1	</td><td>	1	</td><td>		</td><td>	 Provides a reverse shell is triggered upon receipt of a packet with a special string	</td><td>	Providing a reverse shell upon receipt of a special packet	</td><td>	<a href="	https://attack.mitre.org/techniques/T1205/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Remote Access Tools	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	TeamViewer for remote access	</td><td>	Use Multiple Remote Access Tool 	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1219/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Remote File Copy	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Upload and Execute	</td><td>	Download files from Target system	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1105/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	"Standard Application Layer 
+Protocol"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Using HTTP for C&C 	</td><td>	Empire conduct command and control over protocols HTTP and HTTPS	</td><td>	Use DNS TXT records for C2.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1071/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Standard Cryptographic Protocol	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Encrypt C2 traffic using XOR	</td><td>	Use RC4 to encrypt C2 traffic	</td><td>	Use SSL and TLS for communications	</td><td>	<a href="	https://attack.mitre.org/techniques/T1032/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	"Standard Non-Application 
+Layer Protocol"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	 Uses TCP for C2 communications	</td><td>	Network traffic can communicate over a raw socket	</td><td>	Using ICMP, TCP, and UDP for C2.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1095/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Uncommonly Used Port	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Uncommonly Used Port for C2 - 1	</td><td>	Uncommonly Used Port for C2 - 2	</td><td>	Uncommonly Used Port for C2 - 2	</td><td>	<a href="	https://attack.mitre.org/techniques/T1065/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Command and Control	</td><td>	Web Service	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Dropbox and GitHub for C2	</td><td>	Compromised WordPress blogs as C2 servers	</td><td>	Use a SOAP Web service to communicate with its C2 server	</td><td>	<a href="	https://attack.mitre.org/techniques/T1102/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Automated Exfiltration	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltrates collected files over FTP to remote servers, Automate collected files exfiltration via USBStealer	</td><td>	Exfiltarte collected data to the command and control server on a regular timeframe	</td><td>	Search,Match and Exfiltrate the data to command and control server on a regular timeframe	</td><td>	<a href="	https://attack.mitre.org/techniques/T1020/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Data Compressed	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Use RAR to compress files before moving them outside the victim network	</td><td>	WinRAR and 7-Zip to compress an archive stolen data	</td><td>	Compressed collected data using zlib.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1002/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Data Encrypted	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Encrypted data with XOR before sending it over the C2 channel	</td><td>	Encrypts collected data using a single byte XOR key	</td><td>	Encrypts the collected files using 3-DES	</td><td>	<a href="	https://attack.mitre.org/techniques/T1022/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Data Transfer Size Limits	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Uploads data in 2048-byte chunks	</td><td>	Split RAR files for exfiltration into parts	</td><td>	Splits data into chunks up to 23 bytes and sends the data in DNS queries to its C2 server.	</td><td>	<a href="	https://attack.mitre.org/techniques/T1030/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	"Exfiltration Over Alternative 
+Protocol"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltrate files over HTTP,FTP	</td><td>	Exfiltarte files via DNS Tunneling	</td><td>	Exfiltrate data to Cloud, via SMTP,WebDAV	</td><td>	<a href="	https://attack.mitre.org/techniques/T1048/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	"Exfiltration Over Command 
+and Control Channel"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltrates data over its C2 channel	</td><td>	Upload files from the victim's machine to its C2 server	</td><td>	Exfiltrates screenshot files to its C2 server	</td><td>	<a href="	https://attack.mitre.org/techniques/T1041/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	"Exfiltration Over Other Network
+ Medium"	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>		</td><td>		</td><td>	Data Exfiltration via Bluetooth	</td><td>	<a href="	https://attack.mitre.org/techniques/T1011/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Exfiltration Over Physical Medium	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltrate data via USB	</td><td>	Exfiltrate data from air-gapped systems	</td><td>		</td><td>	<a href="	https://attack.mitre.org/techniques/T1052/	">Reference</a>	</td></tr>
+<tr><td>	Security Assesment	</td><td>	OS Penetration Testing	</td><td>	Exfiltration	</td><td>	Scheduled Transfer	</td><td>	1	</td><td>	1	</td><td>	1	</td><td>	Exfiltrate data during nighttime or working hours	</td><td>	"Sleep for a specific time 
+and be set to communicate at specific intervals"	</td><td>	"Exfiltrates data to the C2 
+server every 10 minutes"	</td><td>	<a href="	https://attack.mitre.org/techniques/T1029/	">Reference</a>	</td></tr>
 
         </tbody>
 
-    </table></div>
-	<div  class="rightdiv">
+    </table>
+	</div>
+	<!-- <div  class="rightdiv">
 	<h2 style="color:white; align:left; padding-top:1%" >Drive-by Compromise</h2>
 	<div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Beginner')" id="defaultOpen">Beginner</button>
@@ -873,7 +1409,7 @@ $(document).ready(function() {
 <div id="Info" class="tabcontent">
   <h3>Info</h3>
   <p>Info Details</p>
-</div>
+</div> -->
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -902,444 +1438,4 @@ document.getElementById("defaultOpen").click();
         
         
         
-
-
-
-
-
-
-
-
-
-
-
-
-            <section id="sp-bottom" style="display:none">
-               <div class="container">
-                  <div class="row">
-                     <div id="sp-bottom1" class="col-sm-6 col-md-3">
-                        <div class="sp-column ">
-                           <div class="sp-module ">
-                              <div class="sp-module-content">
-                                 <div class="mod-sppagebuilder  sp-page-builder" data-module_id="118">
-                                    <div class="page-content">
-                                       <div id="section-id-1588773728515" class="sppb-section">
-                                          <div class="sppb-container-inner">
-                                             <div class="sppb-row">
-                                                <div class="sppb-col-md-12" id="column-wrap-id-1588773728528">
-                                                   <div id="column-id-1588773728528" class="sppb-column">
-                                                      <div class="sppb-column-addons">
-                                                         <div id="sppb-addon-wrapper-1588773728529" class="sppb-addon-wrapper">
-                                                            <div id="sppb-addon-1588773728529" class="clearfix ">
-                                                               <div class="sppb-addon sppb-addon-single-image sppb-text-left ">
-                                                                  <div class="sppb-addon-content">
-                                                                     <div class="sppb-addon-single-image-container"><img class="sppb-img-responsive" src="./tmonFiles/inner-page-header-logo(1).png" alt=""></div>
-                                                                  </div>
-                                                               </div>
-                                                               <style type="text/css">@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1588773728529 {}}@media (max-width: 767px) {#sppb-addon-1588773728529 {}}</style>
-                                                               <style type="text/css"></style>
-                                                            </div>
-                                                         </div>
-                                                         <div id="sppb-addon-wrapper-1588773728530" class="sppb-addon-wrapper">
-                                                            <div id="sppb-addon-1588773728530" class="clearfix ">
-                                                               <div class="sppb-addon sppb-addon-header sppb-text-left">
-                                                                  <h1 class="sppb-addon-title">Region’s Leading Provider of Cybersecurity Solutions &amp; Services.</h1>
-                                                               </div>
-                                                               <style type="text/css">#sppb-addon-1588773728530 {
-                                                                  color: #a0a0a0;
-                                                                  }
-                                                                  #sppb-addon-1588773728530 {
-                                                                  }
-                                                                  #sppb-addon-1588773728530.sppb-element-loaded {
-                                                                  }
-                                                                  #sppb-addon-1588773728530 .sppb-addon-title {
-                                                                  font-size:15px;line-height:22px;letter-spacing:1px;font-weight: 300;}
-                                                                  @media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1588773728530 {}}@media (max-width: 767px) {#sppb-addon-1588773728530 {}}#sppb-addon-1588773728530 .sppb-addon-title { font-family: sans-serif; }
-                                                               </style>
-                                                               <style type="text/css">#sppb-addon-1588773728530 h1.sppb-addon-title {margin: 30px 0px 30px 0px; padding: 0px 0px 0px 0px; }</style>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <style type="text/css">.sp-page-builder .page-content #section-id-1588774203435{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.sp-page-builder .page-content #section-id-1588773728515{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;}</style>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="sp-bottom2" class="col-sm-6 col-md-3">
-                                <div class="sp-column ">
-                                    <div class="sp-module ">
-                                       <a href="./aboutus.html"> <h3 class="sp-module-title">About Us</h3></a>
-
-
-                                        <div class="sp-module-content">
-                                            <ul class="nav menu">
-                                                <li class="item-475"><a href="https://infosecurity.com.pk/tfpl.php">Future Leaders Program</a></li>
-                                                <li class="item-476"><a href="https://infosecurity.com.pk/lifeattiss.php">Life at TISS </a></li>
-                                                <li class="item-477"><a href="https://infosecurity.com.pk/trilliumInsight.php">Trillium Insights</a></li>
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sp-bottom3" class="col-sm-6 col-md-3">
-                                <div class="sp-column ">
-                                    <div class="sp-module ">
-                                       <a href="./aboutus.html"> <h3 class="sp-module-title">About Us</h3></a>
-                                        <div class="sp-module-content">
-                                            <ul class="nav menu">
-                                                <li class="item-481"><a href="https://infosecurity.com.pk/portfolio.php"> Solutions </a></li>
-                                                <li class="item-482"><a href="https://infosecurity.com.pk/portfolio.php"> Services</a></li>
-                                                <li class="item-483"><a href="https://infosecurity.com.pk/portfolio.php"> Training</a></li>
-                                                <li class="item-483" style="display:none"><a href="https://demo.themecanyon.org/inco/#">	Distribution</a></li>
-                                                <li class="item-483" style="display:none"><a href="https://demo.themecanyon.org/inco/#">Research &amp; Developmen</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                     <div id="sp-bottom4" class="col-sm-6 col-md-3">
-                        <div class="sp-column ">
-                           <div class="sp-module ">
-                             <a href="https://infosecurity.com.pk/contact.php"> <h3 class="sp-module-title">Contact Us</h3></a>
-                              <div class="sp-module-content">
-                                 <div class="mod-sppagebuilder  sp-page-builder" data-module_id="119">
-                                    <div class="page-content">
-                                       <div id="section-id-1588774203435" class="sppb-section">
-                                          <div class="sppb-row-overlay"></div>
-                                          <div class="sppb-container-inner">
-                                             <div class="sppb-row">
-                                                <div class="sppb-col-md-12" id="column-wrap-id-1588774203450">
-                                                   <div id="column-id-1588774203450" class="sppb-column">
-                                                      <div class="sppb-column-addons">
-                                                         <div id="sppb-addon-wrapper-1588774203451" class="sppb-addon-wrapper">
-                                                            <div id="sppb-addon-1588774203451" class="clearfix ">
-                                                               <div class="sppb-addon sppb-addon-text-block sppb-text-left ">
-                                                                  <div class="sppb-addon-content"><button onclick="this.style.display=&#39;none&#39;">Show Email </button> <span style="height: 1px; margin-top: 7px; display: none;" id="con">Email: info@infosecurity.com.pk</span><br>Phone: +92 51 5524181-2</div>
-                                                               </div>
-                                                               <style type="text/css">#sppb-addon-1588774203451 {
-                                                                  color: #a0a0a0;
-                                                                  }
-                                                                  #sppb-addon-1588774203451 {
-                                                                  }
-                                                                  #sppb-addon-1588774203451.sppb-element-loaded {
-                                                                  }
-                                                                  @media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1588774203451 {}}@media (max-width: 767px) {#sppb-addon-1588774203451 {}}#sppb-addon-1588774203451 .sppb-addon-content { font-family: "Roboto"; }
-                                                               </style>
-                                                               <style type="text/css">#sppb-addon-1588774203451{ font-weight: 300; }@media (min-width: 768px) and (max-width: 991px) {}@media (max-width: 767px) {}</style>
-                                                            </div>
-                                                         </div>
-                                                         <div id="sppb-addon-wrapper-1588774203452" class="sppb-addon-wrapper">
-                                                            <div id="sppb-addon-1588774203452" class="clearfix ">
-                                                               <div class="sppb-addon sppb-addon-button-group sppb-text-left">
-                                                                  <div class="sppb-addon-content" style="margin-top:5px"><a href="https://www.facebook.com/TrilliumInfosec/?fref=ts" id="btn-1588774203452" class="sppb-btn  sppb-btn-link sppb-btn-sm sppb-btn-rounded"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a><a href="https://twitter.com/TrilliumInfosec" id="btn-1588774203453" class="sppb-btn  sppb-btn-link sppb-btn-sm sppb-btn-rounded"><i class="fa fa-twitter" aria-hidden="true"></i> </a><a href="https://www.linkedin.com/company/658041?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_658041%2Cidx%3A0" id="btn-1588774203454" class="sppb-btn  sppb-btn-link sppb-btn-sm sppb-btn-rounded"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></div>
-                                                               </div>
-                                                               <style type="text/css">@media (min-width: 768px) and (max-width: 991px) {#sppb-addon-1588774203452 {}}@media (max-width: 767px) {#sppb-addon-1588774203452 {}}</style>
-                                                               <style type="text/css">#sppb-addon-1588774203452 .sppb-addon-content {margin: -7px;}#sppb-addon-1588774203452 .sppb-addon-content .sppb-btn {margin: 7px;}</style>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <style type="text/css">.sp-page-builder .page-content #section-id-1588774203435{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}</style>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <footer id="sp-footer">
-               <div class="container">
-                  <div class="row">
-                     <div id="sp-footer1" class="col-sm-12 col-md-12">
-                        <center><div class="sp-column "><span class="sp-copyright">Designed and Developed by Team TISS.</span></div></center>
-                     </div>
-                     <!--<div id="sp-footer2" class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="sp-column ">
-                           <div class="sp-module ">
-                              <div class="sp-module-content">
-
-
-                              </div>
-                           </div>
-                        </div>
-                     </div>-->
-                  </div>
-               </div>
-            </footer>
-<script src="./tmonFiles/jquery.min.js(2).download"></script>
-<script>
-$(document).ready(function(){
-	 $("#con").hide(); 																																																																																																																																																																																																																																																																																																																																																				
-  $("button").click(function(){
-    $("#con").show();
-  });
-});
-</script>
-			
-			
-            </div>
-            <!-- /.body-innerwrapper -->
-        </div>
-        <!-- /.body-innerwrapper -->
-        <!-- Off Canvas Menu -->
-        <div class="offcanvas-overlay"></div>
-        <div class="offcanvas-overlay"></div>
-        
-
-      <div class="offcanvas-overlay"></div><div class="offcanvas-menu">
-         <a href="https://demo.themecanyon.org/inco/#" class="close-offcanvas"><i class="fa fa-remove"></i></a>
-         <div class="offcanvas-inner">
-            <div class="sp-module ">
-               <h3 class="sp-module-title">Search</h3>
-               <div class="sp-module-content">
-                  <div class="search">
-                     <form action="https://demo.themecanyon.org/inco/index.php" method="post">
-                        <input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="text" size="20" placeholder="Search ...">		<input type="hidden" name="task" value="search">
-                        <input type="hidden" name="option" value="com_search">
-                        <input type="hidden" name="Itemid" value="437">
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="sp-module ">
-               <div class="sp-module-content">
-                  <ul class="nav menu">
-                     <li class="item-437  current active deeper parent">
-                        <a href="https://infosecurity.com.pk/index.php"> Home</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-437"></span>
-                        <ul class="collapse" id="collapse-menu-437" style="display:none">
-                           <li class="item-556"><a href="https://demo.themecanyon.org/inco/index.php/home/home01"> Home - 01</a></li>
-                           <li class="item-490"><a href="https://demo.themecanyon.org/inco/index.php/home/home02"> Home - 02</a></li>
-                        </ul>
-                     </li>
-                     <li class="item-279  deeper parent">
-                        <a href="./aboutus.html"> About Us</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-279"></span>
-                        <ul class="collapse" id="collapse-menu-279" style="display:none	">
-                           <li class="item-553  deeper parent">
-                              <a href="https://demo.themecanyon.org/inco/#"> Services</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-553"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-553">
-                                 <li class="item-554"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-01"> Service 01</a></li>
-                                 <li class="item-555"><a href="https://demo.themecanyon.org/inco/index.php/pages/services/service-02"> Service 02</a></li>
-                              </ul>
-                           </li>
-                           <li class="item-545  deeper parent">
-                              <a href="https://demo.themecanyon.org/inco/#"> About</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-545"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-545">
-                                 <li class="item-551"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-1"> About us 1</a></li>
-                                 <li class="item-552"><a href="https://demo.themecanyon.org/inco/index.php/pages/about/about-us-2">   us 2</a></li>
-                              </ul>
-                           </li>
-                           <li class="item-558"><a href="https://demo.themecanyon.org/inco/index.php/pages/pricing"> Pricing</a></li>
-                           <li class="item-402"><a href="https://demo.themecanyon.org/inco/index.php/pages/login-form"> Login Form</a></li>
-                           <li class="item-488"><a href="https://demo.themecanyon.org/inco/index.php/component/404/?Itemid=488"> 404 Page</a></li>
-                           <li class="item-405"><a href="https://demo.themecanyon.org/inco/index.php/pages/registration-form"> Registration Form</a></li>
-                        </ul>
-                     </li>
-                     <li class="item-502  deeper parent">
-                        <a href="https://infosecurity.com.pk/portfolio.php"> Portfolio</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-502"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                        <ul class="collapse" id="collapse-menu-502">
-                           <li class="item-568  deeper parent">
-                              <a href="https://infosecurity.com.pk/portfolio.php"> Solutions</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-568"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-568">
-                                 <li class="item-571"><a href="https://infosecurity.com.pk/kes.php">Kaspersky</a></li>
-                                 <li class="item-572"><a href="https://infosecurity.com.pk/ibm.php">IBM</a></li>
-                                 <li class="item-573"><a href="https://infosecurity.com.pk/forcePoint.php">Forcepoint</a></li>
-                                 <li class="item-574"><a href="https://infosecurity.com.pk/rapid7.php">Rapid7</a></li>
-                                 <li class="item-576"><a href="https://infosecurity.com.pk/cisco.php">Cisco</a></li>
-								 <li class="item-576"><a href="https://infosecurity.com.pk/tip.php">Threat Intelligence Platform</a></li>
-								 <li class="item-576"><a href="https://infosecurity.com.pk/cdp.php">Cydea Deception Platform</a></li>	
-		
-                              </ul>                   
-                           </li>
-                           <li class="item-569  deeper parent">
-                              <a href="https://infosecurity.com.pk/portfolio.php"> Services</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-569"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-569">
-                                 <li class="item-577"><a href="https://infosecurity.com.pk/socmss.php">TSOC - Managed Security</a></li>
-                                 <li class="item-578"><a href="https://infosecurity.com.pk/compass.php">T-SOC - Compromise Assessment</a></li>
-                                 <li class="item-579"><a href="https://infosecurity.com.pk/soc.php">T-SOC - Maturity Assessment</a></li>
-                                 <li class="item-580"><a href="https://infosecurity.com.pk/tcon.php">T-CON - Security Consultancy</a></li>
-                                 <li class="item-581"><a href="https://infosecurity.com.pk/tsas.php">T-SAS - Security Assessment</a></li>
-                                 <li class="item-582"><a href="https://infosecurity.com.pk/redTeam.php">T-SAS - Red Team</a></li>
-								 <li class="item-585"><a href="https://infosecurity.com.pk/tsap.php">T-SAP - Security Awareness</a></li>
-                              </ul>
-                           </li>
-                           <li class="item-570  deeper parent">
-                              <a href="https://infosecurity.com.pk/portfolio.php"> Trainings</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-570"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-570">
-                                 <li class="item-583"><a href="https://infosecurity.com.pk/ecc.php">EC-Council</a></li>
-                                 <li class="item-584"><a href="https://infosecurity.com.pk/trex.php">T-REX</a></li>
-
-                                
-                              </ul>
-                           </li>
-                        </ul>
-                     </li>
-					 
-                     <li class="item-278  deeper parent">
-                                                            <a href="https://infosecurity.com.pk/lifeattiss.php">Life at TISS</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-278"></span>
-                        <ul class="collapse" id="collapse-menu-278" style="display:none">
-                           <li class="item-492"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-right-sidebar"> Blog With Right Sidebar</a></li>
-                           <li class="item-493"><a href="https://demo.themecanyon.org/inco/index.php/blog/blog-with-left-sidebar"> Blog With Left Sidebar</a></li>
-                           <li class="item-504"><a href="https://demo.themecanyon.org/inco/index.php/blog/article-category-blog-2"> Article Category Blog</a></li>
-                           <li class="item-503  deeper parent">
-                              <a href="https://demo.themecanyon.org/inco/#"> Post Formats</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-503"><i class="open-icon fa fa-angle-down"></i><i class="close-icon fa fa-angle-up"></i></span>
-                              <ul class="collapse" id="collapse-menu-503">
-                                 <li class="item-494"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/standard-post-format"> Standard Post Format</a></li>
-                                 <li class="item-495"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/video-post-format"> Video Post Format</a></li>
-                                 <li class="item-497"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/audio-post-format"> Audio Post Format</a></li>
-                                 <li class="item-496"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/gallery-post-format"> Gallery Post Format</a></li>
-                                 <li class="item-499"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/link-post-format"> Link Post Format</a></li>
-                                 <li class="item-501"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/quote-post-format"> Quote Post Format</a></li>
-                                 <li class="item-500"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/status-post-format"> Status Post Format</a></li>
-                                 <li class="item-498"><a href="https://demo.themecanyon.org/inco/index.php/blog/post-formats/image-post-format"> Image Post Format</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </li>
-                     <li class="item-546  deeper parent">
-                        <a href="https://infosecurity.com.pk/contact.php"> Contact Us</a><span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-546"></span>
-                        <ul class="collapse" id="collapse-menu-546" style="display:none">
-                           <li class="item-547"><a href="https://infosecurity.com.pk/contact.php"> Contact 01</a></li>
-
-                        </ul>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-		 
-        <!-- /.offcanvas-menu -->
-        <script>
-            var Typer = function(element) {
-              console.log("constructor called");
-              this.element = element;
-              var delim = element.dataset.delim || ","; // default to comma
-              var words = element.dataset.words || "override these,sample typing";
-              this.words = words.split(delim).filter(function(v){return v;}); // non empty words
-              this.delay = element.dataset.delay || 200;
-              this.deleteDelay = element.dataset.deleteDelay || 800;
-            
-              this.progress = { word:0, char:0, building:true, atWordEnd:false };
-              this.typing = true;
-            
-              var colors = element.dataset.colors || "";
-              this.colors = colors.split(",");
-              this.element.style.color = this.colors[0];
-              this.colorIndex = 0;
-            
-              this.doTyping();
-            };
-            
-            Typer.prototype.start = function() {
-              if (!this.typing) {
-                this.typing = true;
-                this.doTyping();
-              }
-            };
-            Typer.prototype.stop = function() {
-              this.typing = false;
-            };
-            Typer.prototype.doTyping = function() {
-              var e = this.element;
-              var p = this.progress;
-              var w = p.word;
-              var c = p.char;
-              var currentChar = this.words[w][c];
-              p.atWordEnd = false;
-              if (this.cursor) {
-                this.cursor.element.style.opacity = "1";
-                this.cursor.on = true;
-                clearInterval(this.cursor.interval);
-                var itself = this.cursor;
-                this.cursor.interval = setInterval(function() {itself.updateBlinkState();}, 400);
-              }
-              if (p.building) {
-                e.innerHTML += currentChar;
-                p.char += 1;
-                if (p.char == this.words[w].length) {
-                  p.building = false;
-                  p.atWordEnd = true;
-                }
-              } else {
-                e.innerHTML = e.innerHTML.slice(0, -1);
-                if (!this.element.innerHTML) {
-                  p.building = true;
-                  p.word = (p.word + 1) % this.words.length;
-                  p.char = 0;
-                  this.colorIndex = (this.colorIndex + 1) % this.colors.length;
-                  this.element.style.color = this.colors[this.colorIndex];
-                }
-              }
-              var myself = this;
-              setTimeout(function() {
-                if (myself.typing) { myself.doTyping(); };
-              }, p.atWordEnd ? this.deleteDelay : this.delay);
-            };
-            
-            var Cursor = function(element) {
-              this.element = element;
-              this.cursorDisplay = element.dataset.cursorDisplay || "|";
-              this.owner = typers[element.dataset.owner] || "";
-              element.innerHTML = this.cursorDisplay;
-              this.on = true;
-              element.style.transition = "all 0.1s";
-              var myself = this;
-              this.interval = setInterval(function() {
-                myself.updateBlinkState();
-              }, 100);
-            }
-            Cursor.prototype.updateBlinkState = function() {
-              if (this.on) {
-                this.element.style.opacity = "0";
-                this.on = false;
-              } else {
-                this.element.style.opacity = "1";
-                this.on = true;
-              }
-            }
-            
-            function TyperSetup() {
-              typers = {};
-              elements = document.getElementsByClassName("typer");
-              for (var i = 0, e; e = elements[i++];) {
-                typers[e.id] = new Typer(e);
-              }
-              elements = document.getElementsByClassName("typer-stop");
-              for (var i = 0, e; e = elements[i++];) {
-                var owner = typers[e.dataset.owner];
-                e.onclick = function(){owner.stop();};
-              }
-              elements = document.getElementsByClassName("typer-start");
-              for (var i = 0, e; e = elements[i++];) {
-                var owner = typers[e.dataset.owner];
-                e.onclick = function(){owner.start();};
-              }
-            
-              elements2 = document.getElementsByClassName("cursor");
-              for (var i = 0, e; e = elements2[i++];) {
-                var t = new Cursor(e);
-                t.owner.cursor = t;
-                console.log(t.owner.cursor);
-              }
-            }
-            
-            TyperSetup();
-            
-        </script>
-        <!-- Preloader -->
-        <!-- Go to top -->
-    
-</div></body></html>
+</body></html>
