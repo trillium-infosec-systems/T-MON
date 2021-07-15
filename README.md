@@ -25,6 +25,8 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 
 ## About T-MON
 
+<p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/poster.jpg" width="1000px" /></p>
+
 **T-MON** is inspired by the Disney character Timon, a meerkat who took a weak and dejected Simba under his wing and made him realize his true potential of leading the Pride Lands, likewise, we aspire to do the same. Just like a meerkat on the hunt, T-MON is focused on helping the cybersecurity experts become the ultimate predators, rendering the adversaries powerless. Meerkat’s philosophy is to out think, out wit and out play the adversaries and we seek to develop the same philosophy by helping you master these meerkat traits:
 
 **Speed and Agility** – Pragmatic cybersecurity is all about swiftness; rapid response, and prompt reaction is the only defense, information streams and corporate data assets have. Preemptively detect, and respond to the threats, acting before they become a menace.
