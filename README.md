@@ -3,6 +3,7 @@
 **T-MON** is an open-source framework designed to provide students and aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
 
 **Philosophy**
+<br> </br>
 
 Today, the biggest challenges for aspiring and existing cybersecurity professionals all across the world are:
 
@@ -11,6 +12,7 @@ Today, the biggest challenges for aspiring and existing cybersecurity profession
 2) A roadmap for the development of these skills
 
 3) Non-existence of a mechanism to evaluate these skills
+4) 
 
 4) No way for seasoned cybersecurity professionals to contribute to this cause and give back to the community
 
