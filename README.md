@@ -1,9 +1,9 @@
-**Trillium's** - Master the art Of Necessary cybersecurity skills (T-MON)
+## Trillium's  - Master the art Of Necessary cybersecurity skills (T-MON)
 
 **T-MON** is an open-source framework designed to provide students and aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
 
 
-**Philosophy**
+# Philosophy
 
 Today, the biggest challenges for aspiring and existing cybersecurity professionals all across the world are:
 
@@ -19,11 +19,11 @@ Today, the biggest challenges for aspiring and existing cybersecurity profession
 
 Through **T-MON** we also aim to provide employers with a mechanism to evaluate the skills of their potential employees. Additionally, for existing employees we can carry out a comprehensive maturity assessment and design specialized workshops to cost effectively develop the skillset of their existing employees.
 
-**Approach**
+## Approach
 
 With constantly evolving cyber threats, a mentality of preventing all breaches is obsolete. Thus, cybersecurity experts not only need to be prepared to respond and react to threats, but also develop proactive skills, including, penetration testing, and red teaming tactics. Keeping this in mind, TMON is developed as a multi-perspective focus (attack-detect-prevent-respond) platform, to instill the skills vital to protect systems against specific threats, coupled with ongoing offensive activity. T-MON employs a vast array of learning assets from a plethora of sources for each segment, allowing users to customize and navigate through the curriculum as they see fit to aid self-paced learning. Realistic scenarios in simulated environments featuring the latest attacker tools, tactics and procedures (TTPs)
 
-**About T-MON**
+# About T-MON
 
 **T-MON** is inspired by the Disney character Timon, a meerkat who took a weak and dejected Simba under his wing and made him realize his true potential of leading the Pride Lands, likewise, we aspire to do the same. Just like a meerkat on the hunt, T-MON is focused on helping the cybersecurity experts become the ultimate predators, rendering the adversaries powerless. Meerkat’s philosophy is to out think, out wit and out play the adversaries and we seek to develop the same philosophy by helping you master these meerkat traits:
 
@@ -41,7 +41,7 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 
 **Persistence** – Cybersecurity experts need to be persistent to predict, prevent, detect and respond to cybersecurity incidents in an effective and timely manner.
 
-**Contributions:**
+# Contributions
 
 **T-MON** is an open source project, and welcomes participation without any requisite affiliation with TISS. Substantive contributions, and feedback, are also invited from all parties, following the common conventions for participation in GitHub public repository projects.
 
