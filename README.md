@@ -1,6 +1,6 @@
-Trillium's - Master the art Of Necessary cybersecurity skills (T-MON)
+**Trillium's** - Master the art Of Necessary cybersecurity skills (T-MON)
 
-T-MON is an open-source framework designed to provide students and aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
+**T-MON** is an open-source framework designed to provide students and aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
 
 **Philosophy**
 
