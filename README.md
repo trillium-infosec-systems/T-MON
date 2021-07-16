@@ -1,6 +1,6 @@
 <p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/logo.png" width="950px" /></p>
 
-## Trillium's  - Master the art Of Necessary cybersecurity skills (T-MON)
+##T-MON
 
 **T-MON** is an open-source framework designed to provide students and aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
 
@@ -15,9 +15,9 @@ Today, the biggest challenges for aspiring and existing cybersecurity profession
 
 3) Non-existence of a mechanism to evaluate these skills
 
-4) No way for seasoned cybersecurity professionals to contribute to this cause and give back to the community
+4) No platform for seasoned cybersecurity professionals who want to contribute and give back to the community
 
-**T-MON** is an open source framework launched with an aim of developing a benchmark to guide cybersecurity aspirants and enthusiasts by providing them a clear pathway of the tactics and techniques they need to learn in order to jump start and take their career to the next level. Since, attack prediction, prevention, detection, and response are the core competencies of a cybersecurity professional. Through T-MON, we aim to develop these cybersecurity attack focused capabilities and solve the global challenge of cybersecurity skill shortage through interactive and challenge based skill development courses. We have aligned T-MON with other community led projects such as MITRE ATT&CK Framework and OWASP to provide a robust and pragmatic scheme of studies. We have kept the framework open source so that everyone can easily have access to this framework and contributors from all across the world can play their part in solving these global challenges. With an objective to collaborate, work together and aid mutual nurturing of cybersecurity professionals of the future and ultimately, reducing the cybersecurity skill shortage, we encourage all seasoned cybersecurity professionals to contribute and play their part for this cause and as a token of appreciation, we will be sending branded T-MON merchandise to every single contributor. We are confident that together
+**T-MON** is an open source framework launched with an aim of developing a benchmark to guide cybersecurity aspirants and enthusiasts by providing them a clear pathway of the tactics and techniques they need to learn in order to jump start and take their career to the next level. Since, attack prediction, prevention, detection, and response are the core competencies of a cybersecurity professional. Through T-MON, we aim to develop these cybersecurity attack focused capabilities and solve the global challenge of cybersecurity skill shortage through interactive and challenge based skill development courses. We have aligned T-MON with other community led projects such as MITRE ATT&CK Framework and OWASP to provide a robust and pragmatic scheme of studies. We have kept the framework open source so that everyone can easily have access to this framework and contributors from all across the world can play their part in solving these global challenges. With an objective to collaborate, work together and aid mutual nurturing of cybersecurity professionals of the future and ultimately, reducing the cybersecurity skill shortage, we encourage all seasoned cybersecurity professionals to contribute and play their part for this cause and as a token of appreciation, we will be sending branded T-MON merchandise to every single contributor.
 
 Through **T-MON** we also aim to provide employers with a mechanism to evaluate the skills of their potential employees. Additionally, for existing employees we can carry out a comprehensive maturity assessment and design specialized workshops to cost effectively develop the skillset of their existing employees.
 
