@@ -2,7 +2,7 @@
 
 ## T-MON
 
-**T-MON** is an open-source framework designed to provide aspiring cybersecurity professionals a roadmap to identify and build their skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
+**T-MON** is an open-source framework designed to reduce the cybersecurity skills shortage by providing aspiring cybersecurity professionals a roadmap to identify and build relevant skills, employers a mechanism to evaluate the skills of their existing and potential employees and the cybersecurity community an opportunity to contribute to this cause.
 
 
 ## Philosophy
