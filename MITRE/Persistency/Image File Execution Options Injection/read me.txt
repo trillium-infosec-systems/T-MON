@@ -1,0 +1,15 @@
+		Image File Execution Options Injection
+
+
+ID: 			T1546.012
+Sub-technique of:	T1546
+Tactics: 		Privilege Escalation, Persistence
+Platforms: 		Windows
+Permissions Required:	Administrator, SYSTEM
+Data Sources: Command:	Command Execution,
+Process: 		Process Creation,
+Windows Registry:	Windows Registry Key Modification
+Contributors:		Oddvar Moe, @oddvarmoe
+Version:		1.1
+
+https://attack.mitre.org/techniques/T1546/012/
