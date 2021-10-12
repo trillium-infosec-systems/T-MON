@@ -1,0 +1,16 @@
+		BITSadmin
+
+ID:				T1197
+Sub-techniques:  		No sub-techniques
+Tactics: 			Defense Evasion, Persistence, 
+Platforms: 			Windows
+Permissions Required:		Administrator, SYSTEM, User
+Data Sources: 			Command: Command Execution,
+Network Traffic: 		Network Connection Creation, 
+Process: 			Process Creation, 
+Service: 			Service Metadata
+Defense Bypassed: 		Firewall, Host forensic analysis
+Version: 			1.2
+
+
+https://attack.mitre.org/techniques/T1197/
