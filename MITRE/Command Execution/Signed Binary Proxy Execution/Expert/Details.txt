@@ -1,0 +1,3 @@
+Challenge:
+	Get Limited Shell on Port: 1113
+	Gain System Access using verclsid.exe
