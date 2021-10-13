@@ -1,0 +1,14 @@
+	Winlogon Helper DLL
+
+ID: 			T1547.004
+Sub-technique of:  	T1547
+Tactics: 		Persistence, Privilege Escalation
+Platforms: 		Windows
+Permissions Required: 	Administrator, SYSTEM
+Data Sources: 		Command: Command Execution, 
+Module: 		Module Load,
+Windows Registry: 	Windows Registry Key Modification
+CAPEC ID: 		CAPEC-579
+Version: 		1.0
+
+https://attack.mitre.org/techniques/T1547/004/
