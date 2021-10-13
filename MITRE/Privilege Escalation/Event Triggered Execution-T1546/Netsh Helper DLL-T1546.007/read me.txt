@@ -1,0 +1,15 @@
+	NetshHelper_DLL
+
+ID:			T1546.007
+Sub-technique of:	T1546
+Tactics:		Privilege Escalation, Persistence
+Platforms: 		Windows
+Permissions Required:	Administrator, SYSTEM
+Data Sources: 		Command:Command Execution, 
+Module: 		Module Load
+Process:		Process Creation
+Windows Registry:	Windows Registry Key Modification
+Version: 		1.0
+
+
+https://attack.mitre.org/techniques/T1546/007/
