@@ -1,0 +1,9 @@
+Challenge:
+
+		Requirement:
+				Target = Windows 7
+				Kali-Box
+				
+		Run Binary on your Target System
+		Get User Level Shell on Port 1102
+		Task is to get System Level Shell on Kali-Box via Meterpreter
