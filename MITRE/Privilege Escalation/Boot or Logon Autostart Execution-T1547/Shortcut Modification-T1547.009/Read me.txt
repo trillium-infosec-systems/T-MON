@@ -1,0 +1,14 @@
+	Shortcut Modification
+
+
+ID:			T1547.009
+Sub-technique of:	T1547
+Tactics: 		Persistence, Privilege Escalation
+Platforms:		Windows
+Permissions Required: 	Administrator, User
+Data Sources: 		File: File Creation,File Modification, 
+Process: 		Process Creation
+CAPEC ID: 		CAPEC-132
+Version: 		1.1
+
+https://attack.mitre.org/techniques/T1547/009/
