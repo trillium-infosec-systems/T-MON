@@ -1,0 +1,4 @@
+Challenge:
+
+	Get Limited Shell on Port 1112
+	Gain System Access via msiexec

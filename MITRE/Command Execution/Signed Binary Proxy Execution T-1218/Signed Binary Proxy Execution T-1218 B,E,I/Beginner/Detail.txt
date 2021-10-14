@@ -1,0 +1,4 @@
+Challenges:
+	
+	Get Limited Shell on Port 1111
+	Gain System Access via msiexec and bitsadmin
