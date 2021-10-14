@@ -1,4 +1,0 @@
-Challange:
-	Gain System Access using CMSTP
-	Get Limited Shell From Port 1104
-	bitsadmin can be used to Download File
