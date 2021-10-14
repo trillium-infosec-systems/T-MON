@@ -1,0 +1,4 @@
+Challege:
+
+	Challenge Taks is to Make Persistency using bitsadmin
+	Get Limited Shell on Port 1100
