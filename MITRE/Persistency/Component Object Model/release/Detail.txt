@@ -1,5 +1,0 @@
-Challenge:
-
-	Get Limited SHell on Port: 1114
-	Get Meterpreter revershell using Component Object Model Hijacking
-	UAC BYAPPS :)
