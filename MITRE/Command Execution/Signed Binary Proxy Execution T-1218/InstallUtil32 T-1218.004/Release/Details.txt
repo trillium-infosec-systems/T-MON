@@ -1,0 +1,5 @@
+Challange Discription:
+
+			Get Limited Shell on Port:	1106
+			Use .cs file to execute melecious binary
+			bitsadmin can be used to download.cs file
