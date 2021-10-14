@@ -1,0 +1,4 @@
+Challenge:
+	Get Limited Shell on port 1104
+	Download and Execute CPL File
+	Get Reverse Shell
