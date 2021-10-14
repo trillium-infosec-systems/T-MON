@@ -1,3 +1,0 @@
-Task:
-
-	Create a Excel sheet with formula injection for post exploitation or for lateral movemnet over the network. Whole activities should be with powershell, assume you are in a network where cmd.exe is disabled by Domain Controller
