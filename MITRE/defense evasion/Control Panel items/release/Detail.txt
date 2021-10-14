@@ -1,4 +1,0 @@
-Challenge:
-
-	Get User Shell on port 1206
-Task is to Evade antiviurs using CPL file and try to get reverse shell on NetCat

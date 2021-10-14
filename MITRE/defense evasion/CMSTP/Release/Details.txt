@@ -1,4 +1,0 @@
-Challenge:
-
-	Get User Level Shell on Port 1202
-Task is to Evade Antivirus using CMSTP Technique and Try to Get Reverse Shell

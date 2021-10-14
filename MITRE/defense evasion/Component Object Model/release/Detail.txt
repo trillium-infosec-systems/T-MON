@@ -1,4 +1,0 @@
-Challenge:
-
-	Get Limited SHell on Port: 1205
-	Task is to Evade Antivirus and Get reverse shell 
