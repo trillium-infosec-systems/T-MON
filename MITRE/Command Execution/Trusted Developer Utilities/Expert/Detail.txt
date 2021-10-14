@@ -1,3 +1,0 @@
-Challenge:
-	Get Limited Shell on Port: 1114
-	Get System Access using bitsadmin and MSBuild
