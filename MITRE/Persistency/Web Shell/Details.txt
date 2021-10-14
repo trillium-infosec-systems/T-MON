@@ -1,4 +1,0 @@
-Challange:
-
-	Find a place to put webshell, may be at that place you do not have rights to execute anything . . . . . :)
-	
