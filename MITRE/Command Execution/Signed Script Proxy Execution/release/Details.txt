@@ -1,5 +1,0 @@
-Signed Script Proxy Execution:
-Challenge:
-	
-		Get Limited Shell on Port 1109
-		Use pubprn script for proxy execution
