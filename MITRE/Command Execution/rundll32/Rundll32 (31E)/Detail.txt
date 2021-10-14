@@ -1,3 +1,0 @@
-Challenge:
-		Get Limited Shell on Port: 1107
-		Gain System Access using Rundll32 via script

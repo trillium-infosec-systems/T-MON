@@ -1,4 +1,0 @@
-Challange:
-	
-	Get Limited Shell Access on Port : 1109
-	Gain System Access using DLL via run32dll

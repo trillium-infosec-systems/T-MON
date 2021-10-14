@@ -1,5 +1,0 @@
-Challenge:
-
-	Get Limited Shell on Port 1108
-	Note:	Using Bitsadmin Download CPL file on desired location
-	Execute CPL File via Rundll32.dll
