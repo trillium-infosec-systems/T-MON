@@ -1,4 +1,0 @@
-Challenge:
-		
-		Get Shell on Port 1105
-		Using "msxsl.exe" to exeucte Payload on target system.
