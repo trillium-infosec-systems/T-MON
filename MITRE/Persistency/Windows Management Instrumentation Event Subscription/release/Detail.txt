@@ -1,5 +1,0 @@
-Challenge:
-	
-	Run Challenge As Admin
-	Get Limited Shell on Port 1119
-	Using Powershell and Windows Management Instrumentation Event Subscription get system level persistency
