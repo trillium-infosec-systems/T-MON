@@ -1,0 +1,8 @@
+
+Write and python server that response Remote DDE Command Execution using Excel Document
+
+
+Refrences:
+https://www.mimecast.com/blog/2019/06/exploit-using-microsoft-excel-power-query-for-remote-dde-execution-discovered/
+
+Note: This technique is widely using by Hackers

