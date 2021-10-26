@@ -1,2 +1,0 @@
-Challenge
-	Create "Compiled HTML File" for execution of code and get reverse shell on netcat, there is no need to "Bypass Activex Obejct" Because this challenge is for beginner

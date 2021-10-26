@@ -1,8 +1,0 @@
-Challenge:
-
-	Get Limited Shell on Port 1118
-	There you can only download a shortcut file
-	You can also shutdown PC
-	
-Task: Get Reverse Shell
-

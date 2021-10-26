@@ -1,4 +1,0 @@
-Challenge:
-
-	Get Limited Shell on Port 1117
-	Get Reverse Shell using meterpreter and netcat via ScreenSaver
