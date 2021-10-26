@@ -1,7 +1,0 @@
-Challenge:
-
-	Run Challange as Admin
-	Get Limited Shell on Port: 1113
-	Put Netcat executable is availble in C:\Tools\nc.exe
-
-Task:	Get netcat reverse shell using "service binary"
