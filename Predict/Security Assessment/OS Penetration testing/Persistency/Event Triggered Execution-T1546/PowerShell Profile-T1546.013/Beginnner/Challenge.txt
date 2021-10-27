@@ -1,0 +1,5 @@
+Challange:
+
+1.	Assume you are in an enviornment where you can execute just command, but the result of command is very slow and out-put result is difficult to read.
+
+2.	Assume you are in an enviornment where you can not write any file, but requirement is to get reverse shell.
