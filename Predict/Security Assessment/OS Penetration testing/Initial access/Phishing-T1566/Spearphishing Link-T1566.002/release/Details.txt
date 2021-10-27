@@ -1,0 +1,6 @@
+Challenge
+
+On PORT TargetIP 7777 you can connect NetCat and got limited shell.
+You can only Execute ".HTA" File on remote system. 
+
+
