@@ -1,0 +1,9 @@
+Solution:
+	
+	Get User Shell on Port 1200
+	Download file on target machine using bitsadmin and wait for at 2 Minutes
+	
+use VMProtect Crack to protect Detected Malware
+http://d2zr7xikdixfes.cloudfront.net/St0Haatac/62.2.7.30/VMProtectSetup.exe
+
+Note: This Technique is used by Chines APT Groups
