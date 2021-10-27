@@ -1,0 +1,5 @@
+Get User Level SHell on Port 1201
+Use Phantom Evasion for AV Evasion
+
+Phantom Evasion:
+	https://github.com/oddcod3/Phantom-Evasion
