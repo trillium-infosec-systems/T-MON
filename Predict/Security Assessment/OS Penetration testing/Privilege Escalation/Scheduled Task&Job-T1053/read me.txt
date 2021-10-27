@@ -1,0 +1,13 @@
+	Scheduled Task/Job
+
+
+
+ID:			T1053
+Sub-techniques: 	T1053.001, T1053.002, T1053.003, T1053.004, T1053.005, T1053.006, T1053.007
+Tactics:		Execution, Persistence, Privilege Escalation
+Platforms:		Containers, Linux, Windows, macOS
+Permissions Required:	Administrator, SYSTEM, User
+Effective Permissions:	Administrator, SYSTEM, User
+CAPEC ID: 		CAPEC-557
+
+https://attack.mitre.org/techniques/T1053/

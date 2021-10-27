@@ -1,0 +1,8 @@
+Challenge:
+	
+	Run Challenge as Administrator
+	Get Limited Shell on Port 1116
+	Get Reverse Shell using netsh
+	Gain System Persistecny using netsh
+	
+HINT: C:\Windows\System32
