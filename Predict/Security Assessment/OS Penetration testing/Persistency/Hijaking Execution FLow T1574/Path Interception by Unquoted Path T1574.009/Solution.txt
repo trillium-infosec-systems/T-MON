@@ -1,0 +1,7 @@
+Solution:
+
+	1.	Get Limited shell on port 1006
+	2.	Find "unquoted service path"
+	3.	Find user persmission on target folder using icacls
+	4.	Generate Meterpreter reverse shell
+	5.	Get Shell :)
