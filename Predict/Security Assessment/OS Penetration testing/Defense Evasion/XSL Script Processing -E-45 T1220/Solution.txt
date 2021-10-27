@@ -1,0 +1,9 @@
+		
+Solution:
+	Create Two Files 
+		1. 	Create a XML File
+		2.	Create a XSL File
+
+using bitsamin download required files from remote server
+
+%temp%\msxsl.exe %temp%\file.xml %temp%\file.xsl
