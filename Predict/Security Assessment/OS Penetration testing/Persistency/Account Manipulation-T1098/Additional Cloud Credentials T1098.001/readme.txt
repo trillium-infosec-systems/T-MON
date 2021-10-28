@@ -1,4 +1,4 @@
-	Add Office 365 Global Administrator Role
+	Additional Cloud Credentials
 ID: T1098.001
 Sub-technique of:  T1098
 Tactic: Persistence
