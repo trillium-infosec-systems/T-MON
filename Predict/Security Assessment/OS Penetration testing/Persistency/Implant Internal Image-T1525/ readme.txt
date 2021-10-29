@@ -1,6 +1,6 @@
                Implant Internal Image
 
-ID: T1525
+ID:   T1525
 Sub-techniques:  No sub-techniques
 Tactic: Persistence
 Platforms: Containers, IaaS
