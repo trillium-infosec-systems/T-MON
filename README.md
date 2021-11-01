@@ -1,4 +1,4 @@
-<p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/logo.png" width="950px" /></p>
+<p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/img/logo.png" width="950px" /></p>
 
 ## T-MON
 
@@ -21,7 +21,7 @@ Through **T-MON** we also aim to provide employers with a mechanism to evaluate 
 
 ## Approach
 
-<p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/poster.jpg" width="960px" /></p>
+<p><img src="https://github.com/trillium-infosec-systems/T-MON/blob/main/img/poster.jpg" width="960px" /></p>
 
 With constantly evolving cyber threats, a mentality of preventing all breaches is obsolete. Thus, cybersecurity experts not only need to be prepared to respond and react to threats, but also develop proactive skills, including, penetration testing, and red teaming tactics. Keeping this in mind, TMON is developed as a multi-perspective focus (predict-prevent-detect-respond) platform, to instill the skills vital to protect systems against specific threats, coupled with ongoing offensive activity. T-MON employs a vast array of learning assets from a plethora of sources for each segment, allowing users to customize and navigate through the curriculum as they see fit to aid self-paced learning. Realistic scenarios in simulated environments featuring the latest attacker tools, tactics and procedures (TTPs)
 
