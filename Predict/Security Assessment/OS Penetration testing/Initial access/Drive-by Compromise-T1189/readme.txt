@@ -1,6 +1,5 @@
-               Drive-by Compromise
+Drive-by Compromise
 ID: T1189
-Sub-techniques:  No sub-techniques
 Tactic: Initial Access
 Platforms: Linux, SaaS, Windows, macOS
 Permissions Required: User
