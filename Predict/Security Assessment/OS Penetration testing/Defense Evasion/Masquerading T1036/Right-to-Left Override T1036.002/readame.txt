@@ -1,0 +1,9 @@
+		Right-to-Left Override
+
+
+ID: T1036.002
+Sub-technique of:  T1036
+Tactic: Defense Evasion
+Platforms: Linux, Windows, macOS
+
+https://attack.mitre.org/techniques/T1036/002/
