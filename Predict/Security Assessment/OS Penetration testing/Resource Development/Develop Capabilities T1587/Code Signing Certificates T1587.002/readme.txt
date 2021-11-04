@@ -1,0 +1,8 @@
+		Code Signing Certificates
+ID: T1587.002
+Sub-technique of:  T1587
+Tactic: Resource Development
+Platforms: PRE
+
+https://attack.mitre.org/techniques/T1587/002/
+

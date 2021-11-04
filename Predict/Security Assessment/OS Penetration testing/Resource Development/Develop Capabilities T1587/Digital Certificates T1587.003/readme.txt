@@ -1,0 +1,7 @@
+		Digital Certificates
+ID: T1587.003
+Sub-technique of:  T1587
+Tactic: Resource Development
+Platforms: PRE
+
+https://attack.mitre.org/techniques/T1587/003/
