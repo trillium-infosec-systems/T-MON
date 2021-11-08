@@ -7,32 +7,20 @@ assignees: ''
 
 ---
 
-**Describe the Idea**
-A clear and concise description of what the idea is.
+### Use-cases
+<!---
+In order to properly evaluate a feature request, it is necessary to understand the use-cases for it.
+Please describe below the _end goal_ you are trying to achieve that has led you to request this feature.
+Please keep this section focused on the problem and not on the suggested solution. We'll get to that in a moment, below!
+-->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### Proposal
+<!---
+If you have an idea for a way to address the problem via a change, please describe it below.
+If you're not sure of some details, don't worry! When we evaluate the feature request we may suggest modifications.
+-->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+### References
+<!--
+Anything else, such as links to other issues or examples, that didn't seem to fit above.
+-->
