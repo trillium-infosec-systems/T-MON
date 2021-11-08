@@ -1,6 +1,6 @@
 ---
 name: New Idea
-about: An Idea For a Feature or Improvement to T-MON
+about: An idea for a feature or improvement to T-MON
 title: ''
 labels: ''
 assignees: ''
