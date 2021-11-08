@@ -1,20 +1,19 @@
 ---
 name: Submit a new challenge
 about: 'Submitting a challenge to T-MON    '
-title: ''
+title: 'Technique ID '
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+<!--
+For reference, check out this article that explains how to properly submit a new challenge: https://github.com/trillium-infosec-systems/T-MON/wiki/Contributing-to-T-MON
+-->
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+### Technique ID: e.g. T-1052
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Additional Details
+<!--
+Anything you'd like to share or explain that isn't represented in the contents of the YAML-based test definition. 
+-->
