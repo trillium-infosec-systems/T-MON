@@ -2,4 +2,4 @@
 
 Denial of Services of CI/CD pipeline
 
-https://github.com/rung/threat-matrix-cicd#lateral-movement
+https://github.com/rung/threat-matrix-cicd#impact
