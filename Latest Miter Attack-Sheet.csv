@@ -1,5 +1,11 @@
 Capabilities,Team,Domain,Skill,Tactic,Technique,SUB-Technique,Windows,Linux,Cloud,MAC OS,Beginner,Intermediate,Expert,Ninja,Reference
 Predict,Red,Security Assesment,General Pentesting,Reconnaissance,Active Scanning,Scanning IP Blocks,1,1,1,1,,,,,
+
+
+```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
 Predict,,Security Assesment,General Pentesting,Reconnaissance,,Vulnerability Scanning,1,1,1,1,,,,,
 Predict,,Security Assesment,General Pentesting,Reconnaissance,Gather Victim Host Information,Hardware,1,1,1,1,,,,,
 Predict,,Security Assesment,General Pentesting,Reconnaissance,,Software,1,1,1,1,,,,,
@@ -249,7 +255,7 @@ Predict,,Security Assesment,OS Penetration Testing,Persistence,Account Manipulat
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Ptrace System Calls,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Proc Memory,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Extra Window Memory Injection,,,,,,,,,
-,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Process Doppelg‰nging,,,,,,,,,
+,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Process Doppelg√§nging,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,,Process Hollowing,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,,VDSO Hijacking,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Privilege Escalation,Scheduled Task/Job,At (Windows),,,,,,,,,
@@ -348,7 +354,7 @@ Predict,,Security Assesment,OS Penetration Testing,Persistence,Account Manipulat
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,,Ptrace System Calls,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,,Proc Memory,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,,Extra Window Memory Injection,,,,,,,,,
-,,Security Assesment,OS Penetration Testing,Defense Evasion,,Process Doppelg‰nging,,,,,,,,,
+,,Security Assesment,OS Penetration Testing,Defense Evasion,,Process Doppelg√§nging,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,,Process Hollowing,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,,VDSO Hijacking,,,,,,,,,
 ,,Security Assesment,OS Penetration Testing,Defense Evasion,Rogue Domain Controller,,,,,,,,,,
