@@ -47,8 +47,8 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 
 T-MON is an open source and community development project. If you're interested in becoming a contributor, check out these resources:
 
-  * Join our [Discord family](https://discord.gg/YEhDnKBXWy) and get involved with the community. Don't forget to review the code of conduct before you join.
-  * Report bugs and request new features by submitting an issue.
+  * Join our [Discord family](https://discord.gg/YEhDnKBXWy) and get involved with the community. Don't forget to review the [DCode of Conduct](https://github.com/trillium-infosec-systems/T-MON/blob/main/_Code%20of%20conduct.md) before you join.
+  * Report bugs and request new features by [Submitting a issue] (https://github.com/trillium-infosec-systems/T-MON/issues/new/choose).
   * Read our contribution guide for more information about contributing directly to this repository.
 
 Have questions or comments about the content? Used our content and want more? Want to discuss other collaboration opportunities? Please contact us.
