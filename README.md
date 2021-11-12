@@ -46,7 +46,8 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 ## Contributions
 
 T-MON is an open source and community development project. If you're interested in becoming a contributor, check out these resources:
-Join our Discord Family and get involved with the community. Don't forget to review the code of conduct before you join.
+
+Join our Discord Family [Timon](https://disney.fandom.com/wiki/Timon) and get involved with the community. Don't forget to review the code of conduct before you join.
 
   * Report bugs and request new features by submitting an issue.
   * Read our contribution guide for more information about contributing directly to this repository.
