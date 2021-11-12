@@ -43,6 +43,16 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 
 **Persistence** – Cybersecurity experts need to be persistent to predict, prevent, detect and respond to cybersecurity incidents in an effective and timely manner.
 
+
+## Get started
+You can execute atomic tests directly from the command line, no installation required. See the [Getting started](https://github.com/trillium-infosec-systems/T-MON/wiki/Getting-Started)page of our wiki.
+
+## Learn more
+T-MON documentation is available as a [Wiki](https://github.com/trillium-infosec-systems/T-MON/wiki).
+
+
+
+
 ## Contributions
 
 T-MON is an open source and community development project. If you're interested in becoming a contributor, check out these resources:
