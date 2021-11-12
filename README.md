@@ -45,7 +45,7 @@ With constantly evolving cyber threats, a mentality of preventing all breaches i
 
 
 ## Get started
-You can execute atomic tests directly from the command line, no installation required. See the [Getting started](https://github.com/trillium-infosec-systems/T-MON/wiki/Getting-Started)page of our wiki.
+You can execute atomic tests directly from the command line, no installation required. See the [Getting started](https://github.com/trillium-infosec-systems/T-MON/wiki/Getting-Started) page of our wiki.
 
 ## Learn more
 T-MON documentation is available as a [Wiki](https://github.com/trillium-infosec-systems/T-MON/wiki).
