@@ -1,12 +1,6 @@
 Capabilities,Team,Domain,Skill,Tactic,Technique,SUB-Technique,Windows,Linux,Cloud,MAC OS,Beginner,Intermediate,Expert,Ninja,Reference
 Predict,Red,Security Assesment,General Pentesting,Reconnaissance,Active Scanning,Scanning IP Blocks,1,1,1,1,,,,,
-
-
-```diff
-+ this text is highlighted in green
-- this text is highlighted in red
-```
-Predict,,Security Assesment,General Pentesting,Reconnaissance,,Vulnerability Scanning,1,1,1,1,,,,,
+<span style="color:blue">Predict</span style="color:blue">,,Security Assesment,General Pentesting,Reconnaissance,,Vulnerability Scanning,1,1,1,1,,,,,
 Predict,,Security Assesment,General Pentesting,Reconnaissance,Gather Victim Host Information,Hardware,1,1,1,1,,,,,
 Predict,,Security Assesment,General Pentesting,Reconnaissance,,Software,1,1,1,1,,,,,
 Predict,,Security Assesment,General Pentesting,Reconnaissance,,Firmware,1,1,1,1,,,,,
