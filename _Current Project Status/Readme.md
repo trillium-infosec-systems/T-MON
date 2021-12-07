@@ -2,7 +2,7 @@ Hello Tech Guys,
 
 How to attempt a challenge.
 
-1. We have uploaded our T-MON framework on GitHub for you. A lot of challenges have been uploaded to it and many challenges need contribution.
+1. We have uploaded our T-MON framework on GitHub for you. A lot of challenges have been uploaded to it and many challenges are still pending.
 2. For Those people, who wish to attempt these (ready to perform) Challenges and want to refine their skills;
 3. You can search the word " COMPLETE " in the search box of the CSV file and a list of completed challenges will appear infront of you.
 4. Please scroll to right side and you will see the " URL " of each complete challenge.
